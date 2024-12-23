@@ -167,6 +167,16 @@ namespace QuanLyDV
                 QLR_NV_Load(sender, e);
             }
         }
+
+        private void dgvNVR_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvNVR_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
      
     
