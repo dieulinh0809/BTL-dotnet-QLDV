@@ -120,14 +120,14 @@ namespace QuanLyDV
             }
             DongKN();
         }
-    
-    //Ham Hien Thi Danh Sach 
-    SqlDataAdapter adapter = null;
-    DataSet ds = null;
-    private void HienDS()
-    {
-        MoKN();
-        string query = @"
+
+        //Ham Hien Thi Danh Sach 
+        SqlDataAdapter adapter = null;
+        DataSet ds = null;
+        private void HienDS()
+        {
+            MoKN();
+            string query = @"
                     SELECT 
                 NhanVien.NV_id,
                 NhanVien.TenNV, 
@@ -143,16 +143,16 @@ namespace QuanLyDV
             INNER JOIN ChucVu ON NhanVien.idCV = ChucVu.idCV
             INNER JOIN Rap ON NhanVien.R_id = Rap.R_id  
  
-             where  Rap.R_id='" + maRap+"'";
-        adapter = new SqlDataAdapter(query, con);
-        SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(adapter);
-        ds = new DataSet();
-        adapter.Fill(ds, "HienThi");
-        dgvNVR.DataSource = ds.Tables["HienThi"];
+             where  Rap.R_id='" + maRap + "'";
+            adapter = new SqlDataAdapter(query, con);
+            SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(adapter);
+            ds = new DataSet();
+            adapter.Fill(ds, "HienThi");
+            dgvNVR.DataSource = ds.Tables["HienThi"];
 
-    }
+        }
 
-    private void QLR_NV_Load(object sender, EventArgs e)
+        private void QLR_NV_Load(object sender, EventArgs e)
         {
             LayTenRap();
             HienDS();
@@ -175,7 +175,272 @@ namespace QuanLyDV
 
         private void dgvNVR_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex != dgvNVR.Rows.Count - 1 && e.RowIndex >= 0)
+            {
+                DataRow row = ds.Tables["HienThi"].Rows[e.RowIndex];
+                txtMaNV.Text = row["NV_id"].ToString().Trim();
+                txtTenNV.Text = row["TenNV"].ToString().Trim();
+                cbNu.Checked = row["GioiTinh"].ToString().Trim().ToLower() == "nữ";
+                cbNam.Checked = !cbNu.Checked;
+                txtCCCD.Text = row["CCCD"].ToString().Trim();
+                txtDiaChi.Text = row["diaChi"].ToString().Trim();
+                txtSDT.Text = row["SDT"].ToString().Trim();
+                txtNoiLamViec.Text = row["R_name"].ToString().Trim();
+                switch (row["tenCV"].ToString().Trim())
+                {
+                    case "Quản lý":
+                        cbQuanLy.Checked = true;
+                        cbSoatVe.Checked = false;
+                        cbThuNgan.Checked = false;
+                        break;
+                    case "Soát vé":
+                        cbQuanLy.Checked = false;
+                        cbSoatVe.Checked = true;
+                        cbThuNgan.Checked = false;
+                        break;
+                    default:
+                        cbQuanLy.Checked = false;
+                        cbSoatVe.Checked = false;
+                        cbThuNgan.Checked = true;
+                        break;
+                }
+                string a = row["birthday"].ToString().Trim().Split(' ')[0];
+                string[] ns = a.Split('/');
+                dtpNgaySinh.Value = new DateTime(int.Parse(ns[2]), int.Parse(ns[0]), int.Parse(ns[1]));
+            }
+        }
+        private void XoaDLForm()
+        {
+            txtMaNV.Clear();
+            txtTenNV.Clear();
+            txtCCCD.Clear();
+            txtSDT.Clear();
+            txtDiaChi.Clear();
+            txtNoiLamViec.Clear();
+            cbSoatVe.Checked = false;
+            cbQuanLy.Checked = false;
+            cbThuNgan.Checked = false;
+            cbNam.Checked = false;
+            cbNu.Checked = false;
+        }
 
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (txtMaNV.Text.Trim() == "" || txtTenNV.Text.Trim() == "" || txtCCCD.Text.Trim() == "" || txtNoiLamViec.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin !");
+                return;
+            }
+
+            MoKN();
+            string query = "INSERT INTO NhanVien (\r\n    NV_id,\r\n    TenNV,\r\n    GioiTinh,\r\n    CCCD,\r\n    diaChi,\r\n    birthday,\r\n    SDT,\r\n    idCV,\r\n    R_id\r\n)\r\nVALUES (\r\n    @NV_id,\r\n    @TenNV,\r\n    @GioiTinh,\r\n    @CCCD,\r\n    @diaChi,\r\n    @birthday,\r\n    @SDT,\r\n    @idCV,\r\n    @R_id\r\n)";
+             string gioiTinh="";
+            string ngaySinh = dtpNgaySinh.Value.Month + "/" + dtpNgaySinh.Value.Day + "/" + dtpNgaySinh.Value.Year;
+
+            if (cbNu.Checked)
+            {
+                gioiTinh = "Nữ";
+            }
+            if (cbNam.Checked)
+            {
+                gioiTinh = "Nam";
+            }
+            string idCV="";
+            if (cbQuanLy.Checked)
+            {
+                idCV = "cv01";
+            }else if (cbThuNgan.Checked)
+            {
+                idCV = "cv02";
+            }
+            else if (cbSoatVe.Checked)
+            {
+                idCV = "cv03";
+            }
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@NV_id", txtMaNV.Text.Trim());
+            cmd.Parameters.AddWithValue("@TenNV", txtTenNV.Text.Trim());
+            cmd.Parameters.AddWithValue("@GioiTinh", gioiTinh  );
+            cmd.Parameters.AddWithValue("@CCCD", txtCCCD.Text.Trim());
+            cmd.Parameters.AddWithValue("@diaChi", txtDiaChi.Text.Trim());
+            cmd.Parameters.AddWithValue("@birthday",  ngaySinh);
+            cmd.Parameters.AddWithValue("@SDT", txtSDT.Text.Trim());
+            cmd.Parameters.AddWithValue("@idCV", idCV);
+            cmd.Parameters.AddWithValue("@R_id",  maRap );
+             
+            string checkQuery = "SELECT COUNT(*) FROM NhanVien WHERE R_id = '" + txtMaNV.Text.Trim() + "'";
+
+            using (SqlCommand check = new SqlCommand(checkQuery, con))
+            {
+
+                int count = (int)check.ExecuteScalar();
+
+                if (count > 0)
+                {
+                    MessageBox.Show("Mã NV đã tồn tại. Vui lòng nhập mã khác.");
+                    return;
+                }
+            }
+
+            int kq = cmd.ExecuteNonQuery();
+            if (kq > 0)
+            {
+                MessageBox.Show("Thêm Dữ Liệu Thành Công !");
+                HienDS();
+                XoaDLForm();
+                return;
+            }
+            else
+            {
+
+                MessageBox.Show("Thêm Dữ Liệu Không  Thành Công !");
+                return;
+            }
+            DongKN();
+
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (txtMaNV.Text.Trim() == "" || txtTenNV.Text.Trim() == "" || txtCCCD.Text.Trim() == "" || txtNoiLamViec.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng chọn nhân viên cần Sửa !");
+                return;
+            }
+
+            MoKN();
+            string query = @"
+        UPDATE NhanVien
+        SET 
+            TenNV = @TenNV,
+            GioiTinh = @GioiTinh,
+            CCCD = @CCCD,
+            diaChi = @diaChi,
+            birthday = @birthday,
+            SDT = @SDT,
+            idCV = @idCV,
+            R_id = @R_id
+        WHERE NV_id = @NV_id";
+            string gioiTinh = "";
+            string ngaySinh = dtpNgaySinh.Value.Month + "/" + dtpNgaySinh.Value.Day + "/" + dtpNgaySinh.Value.Year;
+
+            if (cbNu.Checked )
+            {
+                gioiTinh = "Nữ";
+            }
+            if (cbNam.Checked  )
+            {
+                gioiTinh = "Nam";
+            }
+            string idCV = "";
+            if (cbQuanLy.Checked )
+            {
+                idCV = "cv01";
+            }
+            else if (cbThuNgan.Checked  )
+            {
+                idCV = "cv02";
+            }
+            else if (cbSoatVe.Checked )
+            {
+                idCV = "cv03";
+            }
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@NV_id", txtMaNV.Text.Trim());
+            cmd.Parameters.AddWithValue("@TenNV", txtTenNV.Text.Trim());
+            cmd.Parameters.AddWithValue("@GioiTinh", gioiTinh);
+            cmd.Parameters.AddWithValue("@CCCD", txtCCCD.Text.Trim());
+            cmd.Parameters.AddWithValue("@diaChi", txtDiaChi.Text.Trim());
+            cmd.Parameters.AddWithValue("@birthday", ngaySinh);
+            cmd.Parameters.AddWithValue("@SDT", txtSDT.Text.Trim());
+            cmd.Parameters.AddWithValue("@idCV", idCV);
+            cmd.Parameters.AddWithValue("@R_id", "r1");
+
+             
+            int kq = cmd.ExecuteNonQuery();
+            if (kq > 0)
+            {
+                MessageBox.Show("Sủa Dữ Liệu Thành Công !");
+                HienDS();
+                XoaDLForm();
+                return;
+            }
+            else
+            {
+
+                MessageBox.Show("Sửa Dữ Liệu Không  Thành Công !");
+                return;
+            }
+            DongKN();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (txtMaNV.Text.Trim() == "" || txtTenNV.Text.Trim() == "" || txtCCCD.Text.Trim() == "" || txtNoiLamViec.Text.Trim() == "")
+
+            {
+                MessageBox.Show("Vui lòng chọn Nhân Viên  cần Xóa  ");
+                return;
+            }
+            DialogResult hoi = MessageBox.Show("Bạn có chắc chắn muốn xóa không ? ", "Hỏi ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (hoi == DialogResult.Yes)
+            {
+                MoKN();
+                //Xóa rạp 
+                string queryXoaNV = "Delete from  NV_TK  where  NV_id = '" + txtMaNV.Text.Trim() + "' ";
+                SqlCommand cmd1 = new SqlCommand(queryXoaNV, con);
+                
+                string query = "Delete from   NhanVien   where  NV_id = '" + txtMaNV.Text.Trim() + "' ";
+                SqlCommand cmd = new SqlCommand(query, con);
+
+
+
+                int kq = cmd.ExecuteNonQuery();
+                if (kq > 0)
+                {
+                    MessageBox.Show("Xóa  Dữ Liệu Thành Công !");
+                    HienDS();
+                    XoaDLForm();
+                    return;
+                }
+                else
+                {
+
+                    MessageBox.Show("Xóa Dữ Liệu Không  Thành Công !");
+                    return;
+                }
+                DongKN();
+            }
+        }
+
+        private void cbNu_CheckedChanged(object sender, EventArgs e)
+        {
+             
+            cbNam.Checked = false;
+        }
+
+        private void cbNam_CheckedChanged(object sender, EventArgs e)
+        {
+            cbNu.Checked = false;
+        }
+
+        private void cbQuanLy_CheckedChanged(object sender, EventArgs e)
+        {
+            cbThuNgan.Checked = false;
+            cbSoatVe.Checked = false;
+        }
+
+        private void cbThuNgan_CheckedChanged(object sender, EventArgs e)
+        {
+            cbSoatVe.Checked = false;
+            cbQuanLy.Checked = false;
+        }
+
+        private void cbSoatVe_CheckedChanged(object sender, EventArgs e)
+        {
+            cbThuNgan.Checked = false;
+            cbQuanLy.Checked = false;
         }
     }
      

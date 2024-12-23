@@ -69,28 +69,28 @@
             this.R_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cbSoatVe = new System.Windows.Forms.CheckBox();
+            this.cbThuNgan = new System.Windows.Forms.CheckBox();
+            this.cbQuanLy = new System.Windows.Forms.CheckBox();
+            this.txtNoiLamViec = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.cbNam = new System.Windows.Forms.CheckBox();
+            this.cbNu = new System.Windows.Forms.CheckBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtCCCD = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtTenNV = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.txtMaNV = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtTenNV = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtCCCD = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.cbNu = new System.Windows.Forms.CheckBox();
-            this.cbNam = new System.Windows.Forms.CheckBox();
-            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.txtSDT = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtNoiLamViec = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.cbQuanLy = new System.Windows.Forms.CheckBox();
-            this.cbThuNgan = new System.Windows.Forms.CheckBox();
-            this.sbSoatVe = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -116,6 +116,7 @@
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.UseWaitCursor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnSua
             // 
@@ -130,6 +131,7 @@
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.UseWaitCursor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -144,6 +146,7 @@
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.UseWaitCursor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // label11
             // 
@@ -513,7 +516,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.sbSoatVe);
+            this.groupBox3.Controls.Add(this.cbSoatVe);
             this.groupBox3.Controls.Add(this.cbThuNgan);
             this.groupBox3.Controls.Add(this.cbQuanLy);
             this.groupBox3.Controls.Add(this.txtNoiLamViec);
@@ -546,6 +549,208 @@
             this.groupBox3.Text = "Chi Tiết ";
             this.groupBox3.UseWaitCursor = true;
             // 
+            // cbSoatVe
+            // 
+            this.cbSoatVe.AutoSize = true;
+            this.cbSoatVe.Location = new System.Drawing.Point(109, 499);
+            this.cbSoatVe.Name = "cbSoatVe";
+            this.cbSoatVe.Size = new System.Drawing.Size(64, 17);
+            this.cbSoatVe.TabIndex = 35;
+            this.cbSoatVe.Text = "Soát Vé";
+            this.cbSoatVe.UseVisualStyleBackColor = true;
+            this.cbSoatVe.UseWaitCursor = true;
+            this.cbSoatVe.CheckedChanged += new System.EventHandler(this.cbSoatVe_CheckedChanged);
+            // 
+            // cbThuNgan
+            // 
+            this.cbThuNgan.AutoSize = true;
+            this.cbThuNgan.Location = new System.Drawing.Point(201, 462);
+            this.cbThuNgan.Name = "cbThuNgan";
+            this.cbThuNgan.Size = new System.Drawing.Size(77, 17);
+            this.cbThuNgan.TabIndex = 34;
+            this.cbThuNgan.Text = "Thu Ngân ";
+            this.cbThuNgan.UseVisualStyleBackColor = true;
+            this.cbThuNgan.UseWaitCursor = true;
+            this.cbThuNgan.CheckedChanged += new System.EventHandler(this.cbThuNgan_CheckedChanged);
+            // 
+            // cbQuanLy
+            // 
+            this.cbQuanLy.AutoSize = true;
+            this.cbQuanLy.Location = new System.Drawing.Point(109, 463);
+            this.cbQuanLy.Name = "cbQuanLy";
+            this.cbQuanLy.Size = new System.Drawing.Size(69, 17);
+            this.cbQuanLy.TabIndex = 33;
+            this.cbQuanLy.Text = "Quản Lý ";
+            this.cbQuanLy.UseVisualStyleBackColor = true;
+            this.cbQuanLy.UseWaitCursor = true;
+            this.cbQuanLy.CheckedChanged += new System.EventHandler(this.cbQuanLy_CheckedChanged);
+            // 
+            // txtNoiLamViec
+            // 
+            this.txtNoiLamViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNoiLamViec.Location = new System.Drawing.Point(114, 533);
+            this.txtNoiLamViec.Name = "txtNoiLamViec";
+            this.txtNoiLamViec.Size = new System.Drawing.Size(153, 22);
+            this.txtNoiLamViec.TabIndex = 32;
+            this.txtNoiLamViec.UseWaitCursor = true;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(11, 536);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(105, 16);
+            this.label21.TabIndex = 31;
+            this.label21.Text = "Nơi Làm Việc    : ";
+            this.label21.UseWaitCursor = true;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(24, 463);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(71, 16);
+            this.label20.TabIndex = 29;
+            this.label20.Text = "Chức Vụ   : ";
+            this.label20.UseWaitCursor = true;
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSDT.Location = new System.Drawing.Point(106, 409);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(153, 22);
+            this.txtSDT.TabIndex = 28;
+            this.txtSDT.UseWaitCursor = true;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(34, 415);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(50, 16);
+            this.label18.TabIndex = 27;
+            this.label18.Text = "SDT   : ";
+            this.label18.UseWaitCursor = true;
+            // 
+            // dtpNgaySinh
+            // 
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(109, 357);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(150, 20);
+            this.dtpNgaySinh.TabIndex = 26;
+            this.dtpNgaySinh.UseWaitCursor = true;
+            // 
+            // cbNam
+            // 
+            this.cbNam.AutoSize = true;
+            this.cbNam.Location = new System.Drawing.Point(204, 214);
+            this.cbNam.Name = "cbNam";
+            this.cbNam.Size = new System.Drawing.Size(48, 17);
+            this.cbNam.TabIndex = 25;
+            this.cbNam.Text = "Nam";
+            this.cbNam.UseVisualStyleBackColor = true;
+            this.cbNam.UseWaitCursor = true;
+            this.cbNam.CheckedChanged += new System.EventHandler(this.cbNam_CheckedChanged);
+            // 
+            // cbNu
+            // 
+            this.cbNu.AutoSize = true;
+            this.cbNu.Location = new System.Drawing.Point(109, 214);
+            this.cbNu.Name = "cbNu";
+            this.cbNu.Size = new System.Drawing.Size(40, 17);
+            this.cbNu.TabIndex = 24;
+            this.cbNu.Text = "Nữ";
+            this.cbNu.UseVisualStyleBackColor = true;
+            this.cbNu.UseWaitCursor = true;
+            this.cbNu.CheckedChanged += new System.EventHandler(this.cbNu_CheckedChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(11, 361);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(81, 16);
+            this.label17.TabIndex = 22;
+            this.label17.Text = "Ngày Sinh  : ";
+            this.label17.UseWaitCursor = true;
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiaChi.Location = new System.Drawing.Point(109, 307);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(153, 22);
+            this.txtDiaChi.TabIndex = 21;
+            this.txtDiaChi.UseWaitCursor = true;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(27, 312);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(61, 16);
+            this.label16.TabIndex = 20;
+            this.label16.Text = "Địa Chỉ  : ";
+            this.label16.UseWaitCursor = true;
+            // 
+            // txtCCCD
+            // 
+            this.txtCCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCCCD.Location = new System.Drawing.Point(109, 258);
+            this.txtCCCD.Name = "txtCCCD";
+            this.txtCCCD.Size = new System.Drawing.Size(153, 22);
+            this.txtCCCD.TabIndex = 19;
+            this.txtCCCD.UseWaitCursor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(27, 263);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(56, 16);
+            this.label19.TabIndex = 18;
+            this.label19.Text = "CCCD  : ";
+            this.label19.UseWaitCursor = true;
+            // 
+            // txtTenNV
+            // 
+            this.txtTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenNV.Location = new System.Drawing.Point(109, 168);
+            this.txtTenNV.Name = "txtTenNV";
+            this.txtTenNV.Size = new System.Drawing.Size(153, 22);
+            this.txtTenNV.TabIndex = 9;
+            this.txtTenNV.UseWaitCursor = true;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(27, 173);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(65, 16);
+            this.label15.TabIndex = 8;
+            this.label15.Text = "Tên  NV : ";
+            this.label15.UseWaitCursor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(20, 214);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(72, 16);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "Giới  Tính : ";
+            this.label12.UseWaitCursor = true;
+            // 
             // txtMaNV
             // 
             this.txtMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -576,198 +781,6 @@
             this.panel3.Size = new System.Drawing.Size(1189, 48);
             this.panel3.TabIndex = 6;
             this.panel3.UseWaitCursor = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(20, 214);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 16);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "Giới  Tính : ";
-            this.label12.UseWaitCursor = true;
-            // 
-            // txtTenNV
-            // 
-            this.txtTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenNV.Location = new System.Drawing.Point(109, 168);
-            this.txtTenNV.Name = "txtTenNV";
-            this.txtTenNV.Size = new System.Drawing.Size(153, 22);
-            this.txtTenNV.TabIndex = 9;
-            this.txtTenNV.UseWaitCursor = true;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(27, 173);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(65, 16);
-            this.label15.TabIndex = 8;
-            this.label15.Text = "Tên  NV : ";
-            this.label15.UseWaitCursor = true;
-            // 
-            // txtCCCD
-            // 
-            this.txtCCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCCCD.Location = new System.Drawing.Point(109, 258);
-            this.txtCCCD.Name = "txtCCCD";
-            this.txtCCCD.Size = new System.Drawing.Size(153, 22);
-            this.txtCCCD.TabIndex = 19;
-            this.txtCCCD.UseWaitCursor = true;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(27, 263);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(56, 16);
-            this.label19.TabIndex = 18;
-            this.label19.Text = "CCCD  : ";
-            this.label19.UseWaitCursor = true;
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(109, 307);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(153, 22);
-            this.txtDiaChi.TabIndex = 21;
-            this.txtDiaChi.UseWaitCursor = true;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(27, 312);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(61, 16);
-            this.label16.TabIndex = 20;
-            this.label16.Text = "Địa Chỉ  : ";
-            this.label16.UseWaitCursor = true;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(11, 361);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(81, 16);
-            this.label17.TabIndex = 22;
-            this.label17.Text = "Ngày Sinh  : ";
-            this.label17.UseWaitCursor = true;
-            // 
-            // cbNu
-            // 
-            this.cbNu.AutoSize = true;
-            this.cbNu.Location = new System.Drawing.Point(109, 214);
-            this.cbNu.Name = "cbNu";
-            this.cbNu.Size = new System.Drawing.Size(40, 17);
-            this.cbNu.TabIndex = 24;
-            this.cbNu.Text = "Nữ";
-            this.cbNu.UseVisualStyleBackColor = true;
-            // 
-            // cbNam
-            // 
-            this.cbNam.AutoSize = true;
-            this.cbNam.Location = new System.Drawing.Point(204, 214);
-            this.cbNam.Name = "cbNam";
-            this.cbNam.Size = new System.Drawing.Size(48, 17);
-            this.cbNam.TabIndex = 25;
-            this.cbNam.Text = "Nam";
-            this.cbNam.UseVisualStyleBackColor = true;
-            // 
-            // dtpNgaySinh
-            // 
-            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgaySinh.Location = new System.Drawing.Point(109, 357);
-            this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(150, 20);
-            this.dtpNgaySinh.TabIndex = 26;
-            // 
-            // txtSDT
-            // 
-            this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.Location = new System.Drawing.Point(106, 409);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(153, 22);
-            this.txtSDT.TabIndex = 28;
-            this.txtSDT.UseWaitCursor = true;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(34, 415);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(50, 16);
-            this.label18.TabIndex = 27;
-            this.label18.Text = "SDT   : ";
-            this.label18.UseWaitCursor = true;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(24, 463);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(71, 16);
-            this.label20.TabIndex = 29;
-            this.label20.Text = "Chức Vụ   : ";
-            this.label20.UseWaitCursor = true;
-            // 
-            // txtNoiLamViec
-            // 
-            this.txtNoiLamViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNoiLamViec.Location = new System.Drawing.Point(114, 533);
-            this.txtNoiLamViec.Name = "txtNoiLamViec";
-            this.txtNoiLamViec.ReadOnly = true;
-            this.txtNoiLamViec.Size = new System.Drawing.Size(153, 22);
-            this.txtNoiLamViec.TabIndex = 32;
-            this.txtNoiLamViec.UseWaitCursor = true;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(11, 536);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(105, 16);
-            this.label21.TabIndex = 31;
-            this.label21.Text = "Nơi Làm Việc    : ";
-            this.label21.UseWaitCursor = true;
-            // 
-            // cbQuanLy
-            // 
-            this.cbQuanLy.AutoSize = true;
-            this.cbQuanLy.Location = new System.Drawing.Point(109, 463);
-            this.cbQuanLy.Name = "cbQuanLy";
-            this.cbQuanLy.Size = new System.Drawing.Size(69, 17);
-            this.cbQuanLy.TabIndex = 33;
-            this.cbQuanLy.Text = "Quản Lý ";
-            this.cbQuanLy.UseVisualStyleBackColor = true;
-            // 
-            // cbThuNgan
-            // 
-            this.cbThuNgan.AutoSize = true;
-            this.cbThuNgan.Location = new System.Drawing.Point(201, 462);
-            this.cbThuNgan.Name = "cbThuNgan";
-            this.cbThuNgan.Size = new System.Drawing.Size(77, 17);
-            this.cbThuNgan.TabIndex = 34;
-            this.cbThuNgan.Text = "Thu Ngân ";
-            this.cbThuNgan.UseVisualStyleBackColor = true;
-            // 
-            // sbSoatVe
-            // 
-            this.sbSoatVe.AutoSize = true;
-            this.sbSoatVe.Location = new System.Drawing.Point(109, 499);
-            this.sbSoatVe.Name = "sbSoatVe";
-            this.sbSoatVe.Size = new System.Drawing.Size(64, 17);
-            this.sbSoatVe.TabIndex = 35;
-            this.sbSoatVe.Text = "Soát Vé";
-            this.sbSoatVe.UseVisualStyleBackColor = true;
             // 
             // QLR_NV
             // 
@@ -858,7 +871,7 @@
         private System.Windows.Forms.TextBox txtTenNV;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.CheckBox sbSoatVe;
+        private System.Windows.Forms.CheckBox cbSoatVe;
         private System.Windows.Forms.CheckBox cbThuNgan;
         private System.Windows.Forms.CheckBox cbQuanLy;
         private System.Windows.Forms.TextBox txtNoiLamViec;
