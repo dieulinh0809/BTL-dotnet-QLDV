@@ -69,11 +69,42 @@ namespace QuanLyDV
                 }
 
             }
+            DongKN();
+        }
+        //Ham Hien Thi Danh Sach 
+        SqlDataAdapter adapter = null;
+        DataSet ds = null;
+        private void HienDS()
+        {
+            MoKN();
+            string query = @"
+                    SELECT 
+                 PhongChieu.PC_id,
+                 PhongChieu.PC_name,
+                Rap.R_name
+            FROM    
+                PhongChieu
+           INNER JOIN Rap ON PhongChieu.R_id = Rap.R_id 
+ 
+             where  Rap.R_id='" + maRap + "'";
+            adapter = new SqlDataAdapter(query, con);
+            SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(adapter);
+            ds = new DataSet();
+            adapter.Fill(ds, "HienThi");
+            dgvPC.DataSource = ds.Tables["HienThi"];
+
         }
 
         private void QLR_PC_Load(object sender, EventArgs e)
         {
             LayTenRap();
+            HienDS();
+            DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
+            buttonColumn.HeaderText = "Chức Năng ";
+            buttonColumn.Text = "Quản Lý Ghế ";
+            buttonColumn.Name = "btnColumn";
+            buttonColumn.UseColumnTextForButtonValue = true;
+            dgvPC.Columns.Add(buttonColumn);
         }
     }
 }

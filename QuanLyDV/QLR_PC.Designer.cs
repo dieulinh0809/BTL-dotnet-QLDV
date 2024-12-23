@@ -31,10 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLR_PC));
             this.panel4 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dgvPC = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnTK = new System.Windows.Forms.Button();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.dgvNVR = new System.Windows.Forms.DataGridView();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnThem = new System.Windows.Forms.Button();
@@ -64,17 +66,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.PC_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PC_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.R_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNVR)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPC)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
@@ -91,6 +94,44 @@
             this.panel4.TabIndex = 11;
             this.panel4.UseWaitCursor = true;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dgvPC);
+            this.groupBox2.Location = new System.Drawing.Point(0, 109);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(841, 445);
+            this.groupBox2.TabIndex = 9;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Danh Sách";
+            this.groupBox2.UseWaitCursor = true;
+            // 
+            // dgvPC
+            // 
+            this.dgvPC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PC_id,
+            this.PC_name,
+            this.R_name});
+            this.dgvPC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvPC.Location = new System.Drawing.Point(3, 16);
+            this.dgvPC.Name = "dgvPC";
+            this.dgvPC.Size = new System.Drawing.Size(835, 426);
+            this.dgvPC.TabIndex = 0;
+            this.dgvPC.UseWaitCursor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnTK);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.txtTimKiem);
+            this.groupBox1.Location = new System.Drawing.Point(0, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(841, 100);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tìm Kiếm ";
+            this.groupBox1.UseWaitCursor = true;
+            // 
             // btnTK
             // 
             this.btnTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -103,15 +144,6 @@
             this.btnTK.UseVisualStyleBackColor = true;
             this.btnTK.UseWaitCursor = true;
             // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.Location = new System.Drawing.Point(155, 31);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(158, 22);
-            this.txtTimKiem.TabIndex = 6;
-            this.txtTimKiem.UseWaitCursor = true;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -123,15 +155,14 @@
             this.label13.Text = "Tìm Kiếm  ";
             this.label13.UseWaitCursor = true;
             // 
-            // dgvNVR
+            // txtTimKiem
             // 
-            this.dgvNVR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNVR.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvNVR.Location = new System.Drawing.Point(3, 16);
-            this.dgvNVR.Name = "dgvNVR";
-            this.dgvNVR.Size = new System.Drawing.Size(835, 426);
-            this.dgvNVR.TabIndex = 0;
-            this.dgvNVR.UseWaitCursor = true;
+            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.Location = new System.Drawing.Point(155, 31);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(158, 22);
+            this.txtTimKiem.TabIndex = 6;
+            this.txtTimKiem.UseWaitCursor = true;
             // 
             // panel6
             // 
@@ -169,7 +200,7 @@
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(6, 495);
+            this.btnThem.Location = new System.Drawing.Point(6, 435);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(85, 36);
             this.btnThem.TabIndex = 0;
@@ -183,7 +214,7 @@
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(101, 495);
+            this.btnSua.Location = new System.Drawing.Point(101, 435);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(85, 36);
             this.btnSua.TabIndex = 1;
@@ -197,7 +228,7 @@
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(201, 495);
+            this.btnXoa.Location = new System.Drawing.Point(201, 435);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(85, 36);
             this.btnXoa.TabIndex = 2;
@@ -209,7 +240,7 @@
             // txtViTri
             // 
             this.txtViTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtViTri.Location = new System.Drawing.Point(101, 251);
+            this.txtViTri.Location = new System.Drawing.Point(110, 295);
             this.txtViTri.Name = "txtViTri";
             this.txtViTri.Size = new System.Drawing.Size(153, 22);
             this.txtViTri.TabIndex = 9;
@@ -219,17 +250,17 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(27, 256);
+            this.label16.Location = new System.Drawing.Point(36, 300);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(44, 16);
+            this.label16.Size = new System.Drawing.Size(66, 16);
             this.label16.TabIndex = 8;
-            this.label16.Text = "Vị Trí :";
+            this.label16.Text = "Tên Rạp :";
             this.label16.UseWaitCursor = true;
             // 
             // txtTenRap
             // 
             this.txtTenRap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenRap.Location = new System.Drawing.Point(101, 188);
+            this.txtTenRap.Location = new System.Drawing.Point(110, 232);
             this.txtTenRap.Name = "txtTenRap";
             this.txtTenRap.Size = new System.Drawing.Size(153, 22);
             this.txtTenRap.TabIndex = 7;
@@ -239,17 +270,17 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(27, 193);
+            this.label15.Location = new System.Drawing.Point(36, 237);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(66, 16);
+            this.label15.Size = new System.Drawing.Size(58, 16);
             this.label15.TabIndex = 6;
-            this.label15.Text = "Tên Rạp :";
+            this.label15.Text = "Tên PC :";
             this.label15.UseWaitCursor = true;
             // 
             // txtMaRap
             // 
             this.txtMaRap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaRap.Location = new System.Drawing.Point(101, 125);
+            this.txtMaRap.Location = new System.Drawing.Point(110, 169);
             this.txtMaRap.Name = "txtMaRap";
             this.txtMaRap.Size = new System.Drawing.Size(153, 22);
             this.txtMaRap.TabIndex = 5;
@@ -259,11 +290,11 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(27, 130);
+            this.label14.Location = new System.Drawing.Point(36, 174);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(64, 16);
+            this.label14.Size = new System.Drawing.Size(59, 16);
             this.label14.TabIndex = 4;
-            this.label14.Text = "Mã Rạp : ";
+            this.label14.Text = "Mã PC  : ";
             this.label14.UseWaitCursor = true;
             // 
             // btnDangXuat
@@ -473,27 +504,29 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // groupBox1
+            // PC_id
             // 
-            this.groupBox1.Controls.Add(this.btnTK);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.txtTimKiem);
-            this.groupBox1.Location = new System.Drawing.Point(0, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(841, 100);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tìm Kiếm ";
+            this.PC_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.PC_id.DataPropertyName = "PC_id";
+            this.PC_id.HeaderText = "Mã Phòng Chiếu ";
+            this.PC_id.MinimumWidth = 30;
+            this.PC_id.Name = "PC_id";
             // 
-            // groupBox2
+            // PC_name
             // 
-            this.groupBox2.Controls.Add(this.dgvNVR);
-            this.groupBox2.Location = new System.Drawing.Point(0, 109);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(841, 445);
-            this.groupBox2.TabIndex = 9;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Danh Sách";
+            this.PC_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.PC_name.DataPropertyName = "PC_name";
+            this.PC_name.HeaderText = "Tên Phòng Chiếu";
+            this.PC_name.MinimumWidth = 30;
+            this.PC_name.Name = "PC_name";
+            // 
+            // R_name
+            // 
+            this.R_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.R_name.DataPropertyName = "R_name";
+            this.R_name.HeaderText = "Tên Rạp ";
+            this.R_name.MinimumWidth = 30;
+            this.R_name.Name = "R_name";
             // 
             // QLR_PC
             // 
@@ -509,7 +542,10 @@
             this.Text = "QLR_PC";
             this.Load += new System.EventHandler(this.QLR_PC_Load);
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNVR)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPC)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -519,9 +555,6 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -533,7 +566,7 @@
         private System.Windows.Forms.Button btnTK;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DataGridView dgvNVR;
+        private System.Windows.Forms.DataGridView dgvPC;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnThem;
@@ -565,5 +598,8 @@
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PC_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PC_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn R_name;
     }
 }
