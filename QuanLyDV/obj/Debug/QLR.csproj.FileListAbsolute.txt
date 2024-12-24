@@ -4,7 +4,6 @@ C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\bin\Debug\QuanLyDV.pdb
 C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Debug\QLR.csproj.AssemblyReference.cache
 C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Debug\QLR.DangNhap.resources
 C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Debug\QuanLyDV.Properties.Resources.resources
-C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Debug\QLR.QLNhanSu.resources
 C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Debug\QLR.QLRap.resources
 C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Debug\QuanLyDV.QLR_LC.resources
 C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Debug\QuanLyDV.QLR_NV.resources
@@ -14,3 +13,5 @@ C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Debug\QLR.csproj.Generate
 C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Debug\QLR.csproj.CoreCompileInputs.cache
 C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Debug\QuanLyDV.exe
 C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Debug\QuanLyDV.pdb
+C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Debug\QuanLyDV.QLGhe.resources
+C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Debug\QuanLyDV.QuanLyNS.resources

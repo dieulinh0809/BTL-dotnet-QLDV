@@ -355,7 +355,7 @@ namespace QuanLyDV
             cmd.Parameters.AddWithValue("@birthday", ngaySinh);
             cmd.Parameters.AddWithValue("@SDT", txtSDT.Text.Trim());
             cmd.Parameters.AddWithValue("@idCV", idCV);
-            cmd.Parameters.AddWithValue("@R_id", "r1");
+            cmd.Parameters.AddWithValue("@R_id", maRap);
 
              
             int kq = cmd.ExecuteNonQuery();

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QLR
+namespace QuanLyDV
 {
-    public partial class QLNhanSu : Form
+    public partial class QuanLyNS : Form
     {
-        public QLNhanSu()
+        public QuanLyNS()
         {
             InitializeComponent();
         }

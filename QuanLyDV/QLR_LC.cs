@@ -69,8 +69,33 @@ namespace QuanLyDV
                 }
 
             }
+            DongKN();
         }
+        SqlDataAdapter adapter = null;
+        DataSet ds = null;
+        private void HienDS()
+        {
+            MoKN();
+            string query = @"
+                      SELECT 
+    LichChieu.idLC,  PhongChieu.PC_name,
+    Rap.R_name,Phim.M_name, LichChieu.ngayChieu,
+    LichChieu.gioBD ,LichChieu.thoiLuong,
+    LichChieu.soVe
 
+FROM    
+   LichChieu
+INNER JOIN Phim ON LichChieu.M_id =Phim.M_id
+INNER JOIN Rap ON LichChieu.R_id = Rap.R_id  
+Inner join  PhongChieu ON LichChieu.PC_id = PhongChieu.PC_id
+             where  Rap.R_id='" + maRap + "'";
+            adapter = new SqlDataAdapter(query, con);
+            SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(adapter);
+            ds = new DataSet();
+            adapter.Fill(ds, "HienThi");
+            dgvLCR.DataSource = ds.Tables["HienThi"];
+
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
         }
@@ -78,6 +103,52 @@ namespace QuanLyDV
         private void QLR_LC_Load(object sender, EventArgs e)
         {
             LayTenRap();
+            HienDS();
+        }
+
+        private void dgvNVR_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            string timKiem = txtTimKiem.Text.Trim();
+            TimKiem(timKiem);
+            if (timKiem == "")
+            {
+                QLR_LC_Load(sender, e);
+            }
+        }
+
+        private void btnTK_Click(object sender, EventArgs e)
+        {
+            string timKiem = txtTimKiem.Text.Trim();
+            TimKiem(timKiem);
+        }
+        private void TimKiem(string timKiem)
+        {
+            
+            string query = @"
+                                         SELECT 
+    LichChieu.idLC,  PhongChieu.PC_name,
+    Rap.R_name,Phim.M_name, LichChieu.ngayChieu,
+    LichChieu.gioBD ,LichChieu.thoiLuong,
+    LichChieu.soVe
+
+FROM    
+   LichChieu
+INNER JOIN Phim ON LichChieu.M_id =Phim.M_id
+INNER JOIN Rap ON LichChieu.R_id = Rap.R_id  
+Inner join  PhongChieu ON LichChieu.PC_id = PhongChieu.PC_id
+ 
+               where Rap.R_id='" + maRap + "'and ( idLC like  '%" + timKiem + "%' or  PC_name = '" + timKiem + "' or  M_name = '" + timKiem + "')";
+
+            adapter = new SqlDataAdapter(query, con);
+            SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder();
+            ds = new DataSet();
+            adapter.Fill(ds, "TimKiem ");
+            dgvLCR.DataSource = ds.Tables["TimKiem "];
         }
     }
 }

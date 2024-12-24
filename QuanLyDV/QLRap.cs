@@ -68,17 +68,21 @@ namespace QLR
             dgvRap.DataSource = ds.Tables["HienThi"];
 
         }
-
+        DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
         private void Form1_Load(object sender, EventArgs e)
         {
             HienDS();
 
-            DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
-            buttonColumn.HeaderText = "Chức Năng ";
-            buttonColumn.Text = "Quản Lý ";
-            buttonColumn.Name = "btnColumn";
-            buttonColumn.UseColumnTextForButtonValue = true;
-            dgvRap.Columns.Add(buttonColumn);
+        
+            if (buttonColumn.Name != "btnColumn")
+            {
+
+                buttonColumn.HeaderText = "Chức Năng ";
+                buttonColumn.Text = "Quản Lý ";
+                buttonColumn.Name = "btnColumn";
+                buttonColumn.UseColumnTextForButtonValue = true;
+                dgvRap.Columns.Add(buttonColumn);
+            }
 
         }
 

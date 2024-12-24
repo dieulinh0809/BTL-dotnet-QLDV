@@ -94,17 +94,206 @@ namespace QuanLyDV
             dgvPC.DataSource = ds.Tables["HienThi"];
 
         }
-
+        DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
         private void QLR_PC_Load(object sender, EventArgs e)
         {
             LayTenRap();
             HienDS();
-            DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
-            buttonColumn.HeaderText = "Chức Năng ";
-            buttonColumn.Text = "Quản Lý Ghế ";
-            buttonColumn.Name = "btnColumn";
-            buttonColumn.UseColumnTextForButtonValue = true;
-            dgvPC.Columns.Add(buttonColumn);
+            if (buttonColumn.Name != "btnColumn")
+            {
+
+                buttonColumn.HeaderText = "Chức Năng ";
+                buttonColumn.Text = "Quản Lý Ghế ";
+                buttonColumn.Name = "btnColumn";
+                buttonColumn.UseColumnTextForButtonValue = true;
+                dgvPC.Columns.Add(buttonColumn);
+            }
+
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            string timKiem = txtTimKiem.Text.Trim();
+            TimKiem(timKiem);
+            if (timKiem == "")
+            {
+                QLR_PC_Load(sender, e);
+            }
+        }
+        //Cac Ham Tim Kiem 
+        private void TimKiem(string timKiem)
+        {
+            MoKN();
+            string query = @"
+                    SELECT 
+                 PhongChieu.PC_id,
+                 PhongChieu.PC_name,
+                Rap.R_name
+            FROM    
+                LichChieu
+           INNER JOIN Rap ON PhongChieu.R_id = Rap.R_id 
+ 
+               where Rap.R_id='" + maRap + "'and ( PC_id like  '%" + timKiem + "%' or PC_name = '" + timKiem + "')";
+
+            adapter = new SqlDataAdapter(query, con);
+            SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder();
+            ds = new DataSet();
+            adapter.Fill(ds, "TimKiem ");
+            dgvPC.DataSource = ds.Tables["TimKiem "];
+        }
+        private void btnTK_Click(object sender, EventArgs e)
+        {
+            string timKiem = txtTimKiem.Text.Trim();
+            TimKiem(timKiem);
+        }
+
+        private void dgvPC_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex != dgvPC.Rows.Count - 1 && e.RowIndex >= 0)
+            {
+                if (e.ColumnIndex != dgvPC.Columns["btnColumn"].Index)
+                {
+
+
+                    DataRow row = ds.Tables["HienThi"].Rows[e.RowIndex];
+                    txtMaPC.Text = row["PC_id"].ToString().Trim();
+                    txtTenPC.Text = row["PC_name"].ToString().Trim();
+                    txtTenRap.Text = row["R_name"].ToString().Trim();
+                    //txtMaRap.ReadOnly = true;
+
+                }
+                else
+                {
+
+                    string maPC = dgvPC.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    QLGhe form1 = new QLGhe();
+                    form1.maPC = maPC;
+                    this.Hide();
+                    form1.ShowDialog();
+                    this.Show();
+                }
+
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (txtMaPC.Text.Trim() == "" || txtTenPC.Text.Trim() == "" || txtTenRap.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin !");
+                return;
+            }
+
+
+            string checkquery = "select count  (*) from PhongChieu where PC_id = '" + txtMaPC.Text.Trim() + "'";
+            using (SqlCommand cmd1 = new SqlCommand(checkquery, con))
+            {
+                int kq = (int)cmd1.ExecuteScalar();
+                if (kq > 0)
+                {
+                    MessageBox.Show("Mã PC đã tồn tại , vui lòng nhập mã khác ! ");
+                    return;
+                }
+            }
+            string query = @"insert into PhongChieu (PC_id, PC_name,R_id) values (@PC_id, @PC_name,@R_id)";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@PC_id", txtMaPC.Text.Trim());
+            cmd.Parameters.AddWithValue("@PC_name", txtTenPC.Text.Trim());
+            cmd.Parameters.AddWithValue("@R_id", maRap);
+
+            int kq1 = cmd.ExecuteNonQuery();
+            if (kq1 > 0)
+            {
+                MessageBox.Show("Thêm Dữ Liệu Thành Công ! ");
+                XoaDLForm();
+                QLR_PC_Load(sender, e);
+
+            }
+            else
+            {
+                MessageBox.Show("Thêm Dữ Liệu Không Thành Công ! ");
+
+            }
+
+        }
+        private void XoaDLForm()
+        {
+            txtMaPC.Clear();
+            txtTenPC.Clear();
+            txtTenRap.Clear();
+
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (txtMaPC.Text.Trim() == "" || txtTenPC.Text.Trim() == "" || txtTenRap.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin !");
+                return;
+            }
+            string query = @"Update  PhongChieu set  PC_name = @PC_name,R_id = @R_id where  PC_id = @PC_id";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@PC_id", txtMaPC.Text.Trim());
+            cmd.Parameters.AddWithValue("@PC_name", txtTenPC.Text.Trim());
+            cmd.Parameters.AddWithValue("@R_id", maRap);
+
+
+
+
+            int kq1 = cmd.ExecuteNonQuery();
+            if (kq1 < 0)
+            {
+                MessageBox.Show("Sửa Dữ Liệu Thành Công ! ");
+                XoaDLForm();
+                QLR_PC_Load(sender, e);
+
+            }
+            else
+            {
+                MessageBox.Show("Sửa Dữ Liệu Không Thành Công ! ");
+                XoaDLForm();
+                QLR_PC_Load(sender, e);
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (txtMaPC.Text.Trim() == "" || txtTenPC.Text.Trim() == "" || txtTenRap.Text.Trim() == "")
+
+            {
+                MessageBox.Show("Vui lòng chọn Phòng Chiếu   cần Xóa  ");
+                return;
+            }
+            DialogResult hoi = MessageBox.Show("Bạn có chắc chắn muốn xóa không ? ", "Hỏi ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (hoi == DialogResult.Yes)
+            {
+                MoKN();
+                //Xóa rạp 
+                string queryXoaNV = "Delete from  Ghe  where  PC_id = '" + txtMaPC.Text.Trim() + "' ";
+                SqlCommand cmd1 = new SqlCommand(queryXoaNV, con);
+
+                string query = "Delete from   PhongChieu   where  PC_id = '" + txtMaPC.Text.Trim() + "' ";
+                SqlCommand cmd = new SqlCommand(query, con);
+
+
+
+                int kq = cmd.ExecuteNonQuery();
+                if (kq > 0)
+                {
+                    MessageBox.Show("Xóa  Dữ Liệu Thành Công !");
+                    QLR_PC_Load(sender, e);
+
+                    XoaDLForm();
+                    return;
+                }
+                else
+                {
+
+                    MessageBox.Show("Xóa Dữ Liệu Không  Thành Công !");
+                    return;
+                }
+                DongKN();
+            }
         }
     }
 }

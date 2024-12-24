@@ -1,6 +1,6 @@
-﻿namespace QLR
+﻿namespace QuanLyDV
 {
-    partial class QLNhanSu
+    partial class QLGhe
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // QLNhanSucs
+            // QLGhe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "QLNhanSucs";
-            this.Text = "QLNhanSucs";
+            this.Name = "QLGhe";
+            this.Text = "QLGhe";
+            this.Load += new System.EventHandler(this.QLGhe_Load);
             this.ResumeLayout(false);
 
         }
