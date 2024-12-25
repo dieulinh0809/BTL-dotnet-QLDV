@@ -1,0 +1,12 @@
+C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Release\QLR.csproj.AssemblyReference.cache
+C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Release\QLR.DangNhap.resources
+C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Release\QuanLyDV.Properties.Resources.resources
+C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Release\QuanLyDV.QLGhe.resources
+C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Release\QLR.QLRap.resources
+C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Release\QuanLyDV.QLR_LC.resources
+C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Release\QuanLyDV.QLR_NV.resources
+C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Release\QuanLyDV.QLR_PC.resources
+C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Release\QLR.QuanLyCT.resources
+C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Release\QuanLyDV.QuanLyNS.resources
+C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Release\QLR.csproj.GenerateResource.cache
+C:\Users\Dell\Downloads\QuanLyDV\QuanLyDV\QuanLyDV\obj\Release\QLR.csproj.CoreCompileInputs.cache
