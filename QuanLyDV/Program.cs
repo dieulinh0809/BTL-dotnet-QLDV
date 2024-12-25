@@ -17,7 +17,7 @@ namespace QuanLyDV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyNS());
+            Application.Run(new DangNhap());
         }
     }
 }

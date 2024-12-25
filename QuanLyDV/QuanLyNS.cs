@@ -38,14 +38,14 @@ namespace QuanLyDV
             NhanVien.birthday,
             NhanVien.SDT,
             ChucVu.tenCV,
-            Rap.R_name
+            NhanVien.R_id
         FROM 
             NhanVien
         INNER JOIN ChucVu ON NhanVien.idCV = ChucVu.idCV
-        INNER JOIN Rap ON NhanVien.R_id = Rap.R_id
+        
         WHERE 
-            Rap.R_id = @maRap 
-            AND (
+             
+             (
                  NhanVien.NV_id LIKE '%' + @timKiem + '%'  or
                 NhanVien.TenNV LIKE '%' + @timKiem + '%' 
                 OR ChucVu.tenCV LIKE '%' + @timKiem + '%' 
@@ -56,7 +56,7 @@ namespace QuanLyDV
 
             using (SqlCommand command = new SqlCommand(query, con))
             {
-                command.Parameters.AddWithValue("@maRap", maRap);
+                command.Parameters.AddWithValue("@maRap",  txtNoiLamViec.Text.Trim());
                 command.Parameters.AddWithValue("@timKiem", timKiem);
 
                 using (SqlDataAdapter adapter = new SqlDataAdapter(command))
@@ -69,7 +69,7 @@ namespace QuanLyDV
 
             DongKN();
         }
-        public string maRap;
+       
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có muốn thoát không ? ",
@@ -109,21 +109,7 @@ namespace QuanLyDV
             }
 
         }
-        private void LayTenRap()
-        {
-            MoKN();
-            string query = @"select * from Rap where R_id ='" + maRap + "'";
-            using (SqlCommand cmd = new SqlCommand(query, con))
-            {
-                SqlDataReader sqlDataReader = cmd.ExecuteReader();
-                if (sqlDataReader.Read())
-                {
-                    lblTenRap.Text = sqlDataReader["R_name"].ToString();
-                }
-
-            }
-            DongKN();
-        }
+        
 
         //Ham Hien Thi Danh Sach 
         SqlDataAdapter adapter = null;
@@ -141,13 +127,13 @@ namespace QuanLyDV
                 NhanVien.birthday,
                 NhanVien.SDT,
                 ChucVu.tenCV,
-                Rap.R_name
+                NhanVien.R_id
             FROM    
                 NhanVien
             INNER JOIN ChucVu ON NhanVien.idCV = ChucVu.idCV
-            INNER JOIN Rap ON NhanVien.R_id = Rap.R_id  
- 
-             where  Rap.R_id='" + maRap + "'";
+            "
+
+              ;
             adapter = new SqlDataAdapter(query, con);
             SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(adapter);
             ds = new DataSet();
@@ -156,9 +142,9 @@ namespace QuanLyDV
 
         }
 
-        private void QLR_NV_Load(object sender, EventArgs e)
+        private void QuanLyNS_Load(object sender, EventArgs e)
         {
-            LayTenRap();
+          
             HienDS();
         }
 
@@ -168,7 +154,7 @@ namespace QuanLyDV
             TimKiem(timKiem);
             if (timKiem == "")
             {
-                QLR_NV_Load(sender, e);
+                QuanLyNS_Load(sender, e);
             }
         }
 
@@ -189,7 +175,7 @@ namespace QuanLyDV
                 txtCCCD.Text = row["CCCD"].ToString().Trim();
                 txtDiaChi.Text = row["diaChi"].ToString().Trim();
                 txtSDT.Text = row["SDT"].ToString().Trim();
-                txtNoiLamViec.Text = row["R_name"].ToString().Trim();
+                txtNoiLamViec.Text = row["R_id"].ToString().Trim();
                 switch (row["tenCV"].ToString().Trim())
                 {
                     case "Quản lý":
@@ -272,9 +258,9 @@ namespace QuanLyDV
             cmd.Parameters.AddWithValue("@birthday", ngaySinh);
             cmd.Parameters.AddWithValue("@SDT", txtSDT.Text.Trim());
             cmd.Parameters.AddWithValue("@idCV", idCV);
-            cmd.Parameters.AddWithValue("@R_id", maRap);
+            cmd.Parameters.AddWithValue("@R_id",txtNoiLamViec.Text.Trim() );
 
-            string checkQuery = "SELECT COUNT(*) FROM NhanVien WHERE R_id = '" + txtMaNV.Text.Trim() + "'";
+            string checkQuery = "SELECT COUNT(*) FROM NhanVien WHERE NV_id = '" + txtMaNV.Text.Trim() + "'";
 
             using (SqlCommand check = new SqlCommand(checkQuery, con))
             {
@@ -360,7 +346,7 @@ namespace QuanLyDV
             cmd.Parameters.AddWithValue("@birthday", ngaySinh);
             cmd.Parameters.AddWithValue("@SDT", txtSDT.Text.Trim());
             cmd.Parameters.AddWithValue("@idCV", idCV);
-            cmd.Parameters.AddWithValue("@R_id", maRap);
+            cmd.Parameters.AddWithValue("@R_id", txtNoiLamViec.Text.Trim());
 
 
             int kq = cmd.ExecuteNonQuery();

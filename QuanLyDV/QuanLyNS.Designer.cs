@@ -30,16 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyNS));
-            this.tenCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbSoatVe = new System.Windows.Forms.CheckBox();
             this.cbThuNgan = new System.Windows.Forms.CheckBox();
             this.cbQuanLy = new System.Windows.Forms.CheckBox();
             this.txtNoiLamViec = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.Diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
@@ -60,11 +56,8 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.CCCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.R_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblPhim = new System.Windows.Forms.Label();
@@ -90,6 +83,13 @@
             this.dgvNVR = new System.Windows.Forms.DataGridView();
             this.NV_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CCCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.R_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel6.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -101,18 +101,6 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNVR)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tenCV
-            // 
-            this.tenCV.DataPropertyName = "tenCV";
-            this.tenCV.HeaderText = "Chức Vụ ";
-            this.tenCV.Name = "tenCV";
-            // 
-            // birthday
-            // 
-            this.birthday.DataPropertyName = "birthday";
-            this.birthday.HeaderText = "Ngày Sinh ";
-            this.birthday.Name = "birthday";
             // 
             // cbSoatVe
             // 
@@ -180,18 +168,6 @@
             this.label20.TabIndex = 29;
             this.label20.Text = "Chức Vụ   : ";
             this.label20.UseWaitCursor = true;
-            // 
-            // Diachi
-            // 
-            this.Diachi.DataPropertyName = "Diachi";
-            this.Diachi.HeaderText = "Địa Chỉ ";
-            this.Diachi.Name = "Diachi";
-            // 
-            // SDT
-            // 
-            this.SDT.DataPropertyName = "SDT";
-            this.SDT.HeaderText = "SDT";
-            this.SDT.Name = "SDT";
             // 
             // txtSDT
             // 
@@ -439,18 +415,6 @@
             this.btnXoa.UseWaitCursor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // CCCD
-            // 
-            this.CCCD.DataPropertyName = "CCCD";
-            this.CCCD.HeaderText = "CCCD";
-            this.CCCD.Name = "CCCD";
-            // 
-            // R_name
-            // 
-            this.R_name.DataPropertyName = "R_name";
-            this.R_name.HeaderText = "Nơi Làm Việc";
-            this.R_name.Name = "R_name";
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label11);
@@ -472,12 +436,6 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Công Ty TNHH 3 thành viên | Phiên Bản 01LXH ";
             this.label11.UseWaitCursor = true;
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.DataPropertyName = "GioiTinh";
-            this.GioiTinh.HeaderText = "Giới Tính ";
-            this.GioiTinh.Name = "GioiTinh";
             // 
             // imageList1
             // 
@@ -776,6 +734,48 @@
             this.TenNV.HeaderText = "Tên Nhân Viên ";
             this.TenNV.Name = "TenNV";
             // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "GioiTinh";
+            this.GioiTinh.HeaderText = "Giới Tính ";
+            this.GioiTinh.Name = "GioiTinh";
+            // 
+            // CCCD
+            // 
+            this.CCCD.DataPropertyName = "CCCD";
+            this.CCCD.HeaderText = "CCCD";
+            this.CCCD.Name = "CCCD";
+            // 
+            // Diachi
+            // 
+            this.Diachi.DataPropertyName = "Diachi";
+            this.Diachi.HeaderText = "Địa Chỉ ";
+            this.Diachi.Name = "Diachi";
+            // 
+            // birthday
+            // 
+            this.birthday.DataPropertyName = "birthday";
+            this.birthday.HeaderText = "Ngày Sinh ";
+            this.birthday.Name = "birthday";
+            // 
+            // SDT
+            // 
+            this.SDT.DataPropertyName = "SDT";
+            this.SDT.HeaderText = "SDT";
+            this.SDT.Name = "SDT";
+            // 
+            // tenCV
+            // 
+            this.tenCV.DataPropertyName = "tenCV";
+            this.tenCV.HeaderText = "Chức Vụ ";
+            this.tenCV.Name = "tenCV";
+            // 
+            // R_name
+            // 
+            this.R_name.DataPropertyName = "R_id";
+            this.R_name.HeaderText = "Nơi Làm Việc";
+            this.R_name.Name = "R_name";
+            // 
             // QuanLyNS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -787,7 +787,9 @@
             this.Controls.Add(this.panel4);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "QuanLyNS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLyNS";
+            this.Load += new System.EventHandler(this.QuanLyNS_Load);
             this.panel6.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -809,17 +811,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenCV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn birthday;
         private System.Windows.Forms.CheckBox cbSoatVe;
         private System.Windows.Forms.CheckBox cbThuNgan;
         private System.Windows.Forms.CheckBox cbQuanLy;
         private System.Windows.Forms.TextBox txtNoiLamViec;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Diachi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
@@ -840,11 +837,8 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CCCD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn R_name;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnDangXuat;
@@ -860,8 +854,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dgvNVR;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NV_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
         private System.Windows.Forms.Label lblPhim;
         private System.Windows.Forms.Label blBCTK;
         private System.Windows.Forms.Label lblVe;
@@ -870,5 +862,14 @@
         private System.Windows.Forms.Label lblKH;
         private System.Windows.Forms.Label lblRap;
         private System.Windows.Forms.Label blTC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NV_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CCCD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Diachi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn birthday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenCV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn R_name;
     }
 }

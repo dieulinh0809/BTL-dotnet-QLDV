@@ -273,7 +273,7 @@ namespace QuanLyDV
             cmd.Parameters.AddWithValue("@idCV", idCV);
             cmd.Parameters.AddWithValue("@R_id",  maRap );
              
-            string checkQuery = "SELECT COUNT(*) FROM NhanVien WHERE R_id = '" + txtMaNV.Text.Trim() + "'";
+            string checkQuery = "SELECT COUNT(*) FROM NhanVien WHERE NV_id = '" + txtMaNV.Text.Trim() + "'";
 
             using (SqlCommand check = new SqlCommand(checkQuery, con))
             {
