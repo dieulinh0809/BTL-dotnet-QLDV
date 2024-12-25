@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyDV;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -308,6 +309,52 @@ namespace QLR
                 }
                 DongKN();
             }
+        }
+
+        private void blTC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRap_Click(object sender, EventArgs e)
+        {
+            QLRap form1 = new QLRap();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
+        }
+
+        private void lblKH_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNS_Click(object sender, EventArgs e)
+        {
+            QuanLyNS form1 = new QuanLyNS();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
+        }
+
+        private void lblTK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblVe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPhim_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void blBCTK_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

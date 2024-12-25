@@ -140,16 +140,17 @@ namespace QuanLyDV
 
         private void dgvLCR_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int vt = e.RowIndex;
+            vt = e.RowIndex;
 
-            if (e.RowIndex != dgvLCR.Rows.Count - 1 && e.RowIndex >= 0)
-            {
+            if (vt == -1 ) return;
+
+          
                 DataRow row = ds.Tables["Ghe"].Rows[e.RowIndex];
                 txtMaG.Text = row["idG"].ToString().Trim();
                 txtMaPhong.Text = row["PC_id"].ToString().Trim();
                 txtGhiChu.Text = row["status"].ToString().Trim();
 
-            }
+            
         }
         private void XoaDLForm()
         {
@@ -157,11 +158,26 @@ namespace QuanLyDV
         }
         private void btnThem_Click(object sender, EventArgs e)
         {
+            if (vt == -1) return;
             if (txtMaG.Text.Trim() == "" || txtMaPhong.Text.Trim() == ""  )
 
             {
                 MessageBox.Show("Vui lòng chọn nhập đầy đủ thông tin !");
                 return;
+            }
+
+            string checkQuery = "SELECT COUNT(*) FROM Ghe WHERE idG = '" + txtMaG.Text.Trim() + "'";
+
+            using (SqlCommand check = new SqlCommand(checkQuery, con))
+            {
+
+                int count = (int)check.ExecuteScalar();
+
+                if (count > 0)
+                {
+                    MessageBox.Show("Mã Ghế đã tồn tại. Vui lòng nhập mã khác.");
+                    return;
+                }
             }
             DataRow row = ds.Tables["Ghe"].NewRow();
             row["idG"]=txtMaG.Text.Trim();
@@ -186,17 +202,12 @@ namespace QuanLyDV
             DongKN();
         }
 
-        int vt = -1;
+        int vt;
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-        
-            if (txtMaG.Text.Trim() == "" || txtMaPhong.Text.Trim() == "")
-
-            {
-                MessageBox.Show("Vui lòng chọn Ghế cần sửa !");
-                return;
-            }
+            
+            
            
             if (vt == -1 ) return;
             if (txtMaG.Text.Trim() == "" || txtMaPhong.Text.Trim() == "")
@@ -205,6 +216,7 @@ namespace QuanLyDV
                 MessageBox.Show("Vui lòng chọn Ghế cần sửa ! ");
                 return;
             }
+            //MessageBox.Show(vt.ToString());
             DataRow row = ds.Tables["Ghe"].Rows[vt];
             row.BeginEdit();
             row["idG"] = txtMaG.Text.Trim();
@@ -270,6 +282,52 @@ namespace QuanLyDV
                     return;
                 }
             }
+        }
+
+        private void blTC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRap_Click(object sender, EventArgs e)
+        {
+            QLRap form1 = new QLRap();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
+        }
+
+        private void lblKH_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNS_Click(object sender, EventArgs e)
+        {
+            QuanLyNS form1 = new QuanLyNS();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
+        }
+
+        private void lblTK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblVe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPhim_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void blBCTK_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
