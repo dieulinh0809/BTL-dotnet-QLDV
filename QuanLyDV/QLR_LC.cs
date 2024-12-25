@@ -26,7 +26,11 @@ namespace QuanLyDV
                 );
             if (result == DialogResult.Yes)
             {
-                Close();
+
+                Application.Exit();
+
+
+
             }
         }
         //Chuoi Ket Noi 
@@ -78,9 +82,8 @@ namespace QuanLyDV
             MoKN();
             string query = @"
                       SELECT 
-    LichChieu.idLC,  PhongChieu.PC_name,
-    Rap.R_name,Phim.M_name, LichChieu.ngayChieu,
-    LichChieu.gioBD ,LichChieu.thoiLuong,
+    LichChieu.idLC,  PhongChieu.PC_id,
+    Rap.R_name,Phim.M_id, LichChieu.ngayChieu , 
     LichChieu.soVe
 
 FROM    
@@ -128,12 +131,12 @@ Inner join  PhongChieu ON LichChieu.PC_id = PhongChieu.PC_id
         }
         private void TimKiem(string timKiem)
         {
-            
+
             string query = @"
                                          SELECT 
-    LichChieu.idLC,  PhongChieu.PC_name,
-    Rap.R_name,Phim.M_name, LichChieu.ngayChieu,
-    LichChieu.gioBD ,LichChieu.thoiLuong,
+    LichChieu.idLC,  PhongChieu.PC_id,
+    Rap.R_name,Phim.M_id, LichChieu.ngayChieu,
+  
     LichChieu.soVe
 
 FROM    
@@ -150,5 +153,161 @@ Inner join  PhongChieu ON LichChieu.PC_id = PhongChieu.PC_id
             adapter.Fill(ds, "TimKiem ");
             dgvLCR.DataSource = ds.Tables["TimKiem "];
         }
+
+        private void dgvLCR_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string ngaySinh = dtpNgayChieu.Value.Month + "/" + dtpNgayChieu.Value.Day + "/" + dtpNgayChieu.Value.Year;
+            if (e.RowIndex != dgvLCR.Rows.Count - 1 && e.RowIndex >= 0)
+            {
+
+
+
+                DataRow row = ds.Tables["HienThi"].Rows[e.RowIndex];
+                txtMaLC.Text = row["idLC"].ToString().Trim();
+                txtTenPC.Text = row["PC_id"].ToString().Trim();
+                txtTenRap.Text = row["R_name"].ToString().Trim();
+                txtTenPhim.Text = row["M_id"].ToString().Trim();
+                dtpNgayChieu.Text = row["ngayChieu"].ToString().Trim();
+                txtSoVe.Text = row["soVe"].ToString().Trim();
+
+            }
+        }
+        private void XoaDLForm()
+        {
+            txtSoVe.Clear();
+            txtMaLC.Clear();
+            txtTenPC.Clear();
+            txtTenRap.Clear();
+            txtTenPhim.Clear();
+            
+        }
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            string ngayChieu = dtpNgayChieu.Value.Month + "/" + dtpNgayChieu.Value.Day + "/" + dtpNgayChieu.Value.Year;
+            if (txtMaLC.Text.Trim() == "" || txtTenPC.Text.Trim() == "" || txtTenRap.Text.Trim() == "" || txtTenPhim.Text.Trim() == "" || txtSoVe.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
+
+            string checkquery = "select count(*) from LichChieu where idLC = '" + txtMaLC.Text.Trim() + "'";
+            using (SqlCommand cmd1 = new SqlCommand(checkquery, con))
+            {
+                int kq = (int)cmd1.ExecuteScalar();
+                if (kq > 0)
+                {
+                    MessageBox.Show("Mã LC đã tồn tại, vui lòng nhập mã khác!");
+                    return;
+                }
+            }
+
+            string query = @"INSERT INTO LichChieu (idLC, PC_id,M_id, R_id, ngayChieu , soVe)
+                   VALUES (@idLC, @PC_id,@M_id, @r_id, @ngayChieu , @soVe)";
+            int soVe;
+            int.TryParse(txtSoVe.Text.Trim(), out soVe);
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@idLC", txtMaLC.Text.Trim());
+            cmd.Parameters.AddWithValue("@PC_id", txtTenPC.Text.Trim());
+             cmd.Parameters.AddWithValue("@M_id", txtTenPhim.Text.Trim());
+            cmd.Parameters.AddWithValue("@r_id", maRap);
+            
+            cmd.Parameters.AddWithValue("@ngayChieu", ngayChieu);
+         
+            cmd.Parameters.AddWithValue("@soVe",soVe);
+
+            int kq1 = cmd.ExecuteNonQuery();
+
+            if (kq1 > 0)
+            {
+                MessageBox.Show("Thêm Dữ Liệu Thành Công!");
+                XoaDLForm();
+                HienDS();
+            }
+            else
+            {
+                MessageBox.Show("Thêm Dữ Liệu Không Thành Công!");
+            }
+        }
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            string ngayChieu = dtpNgayChieu.Value.Month + "/" + dtpNgayChieu.Value.Day + "/" + dtpNgayChieu.Value.Year;
+            if (txtMaLC.Text.Trim() == "" || txtTenPC.Text.Trim() == "" || txtTenRap.Text.Trim() == "" || txtTenPhim.Text.Trim() == "" || txtSoVe.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng chọn dữ liệu để sửa!");
+                return;
+            }
+ 
+
+            string query = @"UPDATE LichChieu
+                       SET PC_id = @PC_id,
+                           M_id = @M_id,
+                           r_id = @r_id,
+                           ngayChieu = @ngayChieu,
+                           soVe = @soVe
+                       WHERE idLC = @idLC";
+            int soVe;
+            int.TryParse(txtSoVe.Text.Trim(), out soVe);
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@idLC", txtMaLC.Text.Trim());
+            cmd.Parameters.AddWithValue("@PC_id", txtTenPC.Text.Trim());
+            cmd.Parameters.AddWithValue("@M_id", txtTenPhim.Text.Trim());
+            cmd.Parameters.AddWithValue("@r_id", maRap);
+
+            cmd.Parameters.AddWithValue("@ngayChieu", ngayChieu);
+
+            cmd.Parameters.AddWithValue("@soVe", soVe);
+
+            int kq1 = cmd.ExecuteNonQuery();
+
+            if (kq1 > 0)
+            {
+                MessageBox.Show("Sửa Dữ Liệu Thành Công!");
+                XoaDLForm();
+                HienDS();
+            }
+            else
+            {
+                MessageBox.Show("Sửa  Dữ Liệu Không Thành Công!");
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (txtMaLC.Text.Trim() == ""  )
+
+            {
+                MessageBox.Show("Vui lòng chọn Lịch Chiếu  cần Xóa ");
+                return;
+            }
+            DialogResult hoi = MessageBox.Show("Bạn có chắc chắn muốn xóa không ? ", "Hỏi ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (hoi == DialogResult.Yes)
+            {
+                MoKN();
+             
+                 
+
+                string query = "Delete from   LichChieu   where  idLC = '" + txtMaLC.Text.Trim() + "' ";
+                SqlCommand cmd = new SqlCommand(query, con);
+
+
+
+                int kq = cmd.ExecuteNonQuery();
+                if (kq > 0)
+                {
+                    MessageBox.Show("Xóa  Dữ Liệu Thành Công !");
+                    QLR_LC_Load(sender, e);
+
+                    XoaDLForm();
+                    return;
+                }
+                else
+                {
+
+                    MessageBox.Show("Xóa Dữ Liệu Không  Thành Công !");
+                    return;
+                }
+                DongKN();
+            }
+        }
     }
-}
+    }

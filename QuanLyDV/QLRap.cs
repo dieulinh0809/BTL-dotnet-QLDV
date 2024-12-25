@@ -25,7 +25,9 @@ namespace QLR
                 );
             if (result == DialogResult.Yes)
             {
-                Close();
+                Application.Exit();
+
+
             }
         }
         //Chuoi Ket Noi 

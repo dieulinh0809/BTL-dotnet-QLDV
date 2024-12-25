@@ -74,7 +74,11 @@ namespace QLR
                 );
             if (result == DialogResult.Yes)
             {
+                Application.Exit();
+
                 Close();
+                 
+
             }
         }
 
