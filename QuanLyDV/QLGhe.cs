@@ -15,6 +15,7 @@ namespace QuanLyDV
 {
     public partial class QLGhe : Form
     {
+        public string LoaiTK;
         public QLGhe()
         {
             InitializeComponent();

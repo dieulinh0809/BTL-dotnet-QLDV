@@ -70,11 +70,26 @@ namespace QLR
             string storedPassword = cmd.ExecuteScalar() as string;
             if (storedPassword != null && pass.Trim() == storedPassword.Trim())
             {
-                 QLRap form1 = new QLRap();
-                this.Hide();
-                form1.ShowDialog();
-                this.Show();
+                string q = @"select * from TaiKhoan where idTK ='" + id + "'";
 
+                using (SqlCommand cmd1 = new SqlCommand(q, con))
+                {
+                    SqlDataReader sqlDataReader = cmd1.ExecuteReader();
+                    if (sqlDataReader.Read())
+                    {
+                       string loaiTK  = sqlDataReader["LoaiTK"].ToString();
+                        QLRap form1 = new QLRap();
+                        QuanLyCT.LoaiTK=loaiTK;
+
+                        this.Hide();
+                        form1.ShowDialog();
+                        this.Show();
+
+                    }
+
+                }
+
+               
             }
             else
             {

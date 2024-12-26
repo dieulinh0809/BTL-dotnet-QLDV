@@ -15,8 +15,8 @@ namespace QLR
 {
     public partial class QuanLyCT : Form
     {
-        
-         public QuanLyCT( )
+        public static string LoaiTK;
+        public QuanLyCT( )
         {
             InitializeComponent();
         }
