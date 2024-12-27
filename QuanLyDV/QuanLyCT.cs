@@ -20,6 +20,47 @@ namespace QLR
         {
             InitializeComponent();
         }
+        private void PhanQuyen(string LoaiTK)
+        {
+            if (LoaiTK=="QLR")
+            {
+                lblKH.Enabled = false;
+                lblNS.Enabled = false;
+                lblTK.Enabled = false;
+                lblVe.Enabled = false;
+                lblPhim.Enabled = false;
+                blBCTK.Enabled = false;
+                
+            }else if (LoaiTK == "QLNS")
+            {
+                lblKH.Enabled = false;
+                lblRap.Enabled = false;
+                lblTK.Enabled = false;
+                lblVe.Enabled = false;
+                lblPhim.Enabled = false;
+                blBCTK.Enabled = false;
+            }else if (LoaiTK == "QLP")
+            {
+                lblKH.Enabled = false;
+                lblRap.Enabled = false;
+                lblTK.Enabled = false;
+                lblVe.Enabled = false;
+                lblNS.Enabled = false;
+                blBCTK.Enabled = false;
+            }else if (LoaiTK== "QLV")
+            {
+                lblKH.Enabled = false;
+                lblRap.Enabled = false;
+                lblTK.Enabled = false;
+                lblPhim.Enabled = false;
+                lblNS.Enabled = false;
+                blBCTK.Enabled = false;
+            }
+            else
+            {
+                return;
+            }
+        }
         //Chuoi Ket Noi 
         string str = @"Data Source=DESKTOP-RT4JUIV\SQLEXPRESS;Initial Catalog=CGV05;Integrated Security=True;Encrypt=False "
 ;
@@ -52,6 +93,8 @@ namespace QLR
         private void QuanLy_Load(object sender, EventArgs e)
         {
             LayTenRap();
+            PhanQuyen(LoaiTK);
+            
         }
         private void LayTenRap()
         {
