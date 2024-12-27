@@ -18,7 +18,7 @@ namespace QuanLyDV
         {
             InitializeComponent();
         }
-        public string LoaiTK;
+        public static string LoaiTK;
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có muốn thoát không ? ",

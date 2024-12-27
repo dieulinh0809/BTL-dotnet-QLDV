@@ -12,6 +12,7 @@ namespace QuanLyDV
 {
     public partial class QLR_Ve : Form
     {
+        public static string LoaiTK;
         public QLR_Ve()
         {
             InitializeComponent();

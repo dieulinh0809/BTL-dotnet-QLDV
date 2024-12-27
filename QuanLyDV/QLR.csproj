@@ -147,6 +147,9 @@
     <EmbeddedResource Include="QLR_PC.resx">
       <DependentUpon>QLR_PC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QLR_Ve.resx">
+      <DependentUpon>QLR_Ve.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLyCT.resx">
       <DependentUpon>QuanLyCT.cs</DependentUpon>
     </EmbeddedResource>
