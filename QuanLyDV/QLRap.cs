@@ -14,7 +14,7 @@ namespace QLR
 {
     public partial class QLRap : Form
     {
-        public string LoaiTK;
+        public static string LoaiTK;
         public QLRap()
         {
             InitializeComponent();

@@ -14,7 +14,7 @@ namespace QuanLyDV
 {
     public partial class QuanLyNS : Form
     {
-        public string LoaiTK { get; set; }
+        public static string LoaiTK { get; set; }
 
         public QuanLyNS()
         {
