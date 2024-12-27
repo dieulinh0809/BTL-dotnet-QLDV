@@ -21,6 +21,50 @@ namespace QuanLyDV
             InitializeComponent();
         }
 
+        private void PhanQuyen(string LoaiTK)
+        {
+            if (LoaiTK == "QLR")
+            {
+                lblKH.Enabled = false;
+                lblNS.Enabled = false;
+                lblTK.Enabled = false;
+                lblVe.Enabled = false;
+                lblPhim.Enabled = false;
+                blBCTK.Enabled = false;
+
+            }
+            else if (LoaiTK == "QLNS")
+            {
+                lblKH.Enabled = false;
+                lblRap.Enabled = false;
+                lblTK.Enabled = false;
+                lblVe.Enabled = false;
+                lblPhim.Enabled = false;
+                blBCTK.Enabled = false;
+            }
+            else if (LoaiTK == "QLP")
+            {
+                lblKH.Enabled = false;
+                lblRap.Enabled = false;
+                lblTK.Enabled = false;
+                lblVe.Enabled = false;
+                lblNS.Enabled = false;
+                blBCTK.Enabled = false;
+            }
+            else if (LoaiTK == "QLV")
+            {
+                lblKH.Enabled = false;
+                lblRap.Enabled = false;
+                lblTK.Enabled = false;
+                lblPhim.Enabled = false;
+                lblNS.Enabled = false;
+                blBCTK.Enabled = false;
+            }
+            else
+            {
+                return;
+            }
+        }
         private void btnTK_Click(object sender, EventArgs e)
         {
             string timKiem = txtTimKiem.Text.Trim();
@@ -146,7 +190,7 @@ namespace QuanLyDV
 
         private void QuanLyNS_Load(object sender, EventArgs e)
         {
-          
+            PhanQuyen(LoaiTK);
             HienDS();
         }
 
