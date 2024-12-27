@@ -15,7 +15,7 @@ namespace QuanLyDV
 {
     public partial class QLGhe : Form
     {
-        public string LoaiTK;
+        public static string LoaiTK;
         public QLGhe()
         {
             InitializeComponent();
@@ -327,6 +327,11 @@ namespace QuanLyDV
         }
 
         private void blBCTK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
