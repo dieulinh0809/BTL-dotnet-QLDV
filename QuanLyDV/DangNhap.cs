@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyDV;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -80,7 +81,12 @@ namespace QLR
                        string loaiTK  = sqlDataReader["LoaiTK"].ToString();
                         QLRap form1 = new QLRap();
                         QuanLyCT.LoaiTK=loaiTK;
-
+                        QuanLyNS.LoaiTK=loaiTK;
+                        QLRap.LoaiTK = loaiTK;
+                        QLGhe.LoaiTK = loaiTK;
+                        QLR_LC.LoaiTK = loaiTK;
+                        QLR_NV.LoaiTK = loaiTK;
+                        QLR_PC.LoaiTK = loaiTK;
                         this.Hide();
                         form1.ShowDialog();
                         this.Show();
