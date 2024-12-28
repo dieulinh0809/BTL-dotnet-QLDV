@@ -184,6 +184,7 @@
             this.lblPhim.Text = "Phim ";
             this.lblPhim.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblPhim.UseWaitCursor = true;
+            this.lblPhim.Click += new System.EventHandler(this.lblPhim_Click);
             // 
             // lblTK
             // 
@@ -195,6 +196,7 @@
             this.lblTK.TabIndex = 15;
             this.lblTK.Text = "Tài Khoản ";
             this.lblTK.UseWaitCursor = true;
+            this.lblTK.Click += new System.EventHandler(this.lblTK_Click);
             // 
             // lblNS
             // 
@@ -218,6 +220,7 @@
             this.lblKH.TabIndex = 13;
             this.lblKH.Text = "Khách Hàng ";
             this.lblKH.UseWaitCursor = true;
+            this.lblKH.Click += new System.EventHandler(this.lblKH_Click);
             // 
             // lblRap
             // 
@@ -241,6 +244,7 @@
             this.blTC.TabIndex = 11;
             this.blTC.Text = "Trang Chủ ";
             this.blTC.UseWaitCursor = true;
+            this.blTC.Click += new System.EventHandler(this.blTC_Click);
             // 
             // btnDangXuat
             // 

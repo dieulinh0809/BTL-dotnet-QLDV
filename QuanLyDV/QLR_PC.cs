@@ -1,4 +1,5 @@
-﻿using QLR;
+﻿using fTrangchu;
+using QLR;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -350,7 +351,10 @@ namespace QuanLyDV
 
         private void blTC_Click(object sender, EventArgs e)
         {
-
+            fTrangChu form1 = new fTrangChu();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
         }
 
         private void lblRap_Click(object sender, EventArgs e)
@@ -363,7 +367,10 @@ namespace QuanLyDV
 
         private void lblKH_Click(object sender, EventArgs e)
         {
-
+            fQuanLyKhachHang form1 = new fQuanLyKhachHang();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
         }
 
         private void lblNS_Click(object sender, EventArgs e)
@@ -389,7 +396,10 @@ namespace QuanLyDV
 
         private void lblPhim_Click(object sender, EventArgs e)
         {
-
+            fQuanLyPhim form1 = new fQuanLyPhim();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
         }
 
         private void blBCTK_Click(object sender, EventArgs e)

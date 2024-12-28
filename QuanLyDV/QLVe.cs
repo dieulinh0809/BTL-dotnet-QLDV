@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using QLR;
+using fTrangchu;
 
 namespace QuanLyDV
 {
@@ -309,6 +310,35 @@ namespace QuanLyDV
         private void lblVe_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void blTC_Click(object sender, EventArgs e)
+        {
+            fTrangChu form1 = new fTrangChu();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
+        }
+
+        private void lblKH_Click(object sender, EventArgs e)
+        {
+            fQuanLyKhachHang form1 = new fQuanLyKhachHang();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
+        }
+
+        private void lblTK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPhim_Click(object sender, EventArgs e)
+        {
+            fQuanLyPhim form1 = new fQuanLyPhim();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
         }
     }
 }
