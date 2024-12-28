@@ -34,7 +34,6 @@
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.lblPhim = new System.Windows.Forms.Label();
-            this.blBCTK = new System.Windows.Forms.Label();
             this.lblVe = new System.Windows.Forms.Label();
             this.lblTK = new System.Windows.Forms.Label();
             this.lblNS = new System.Windows.Forms.Label();
@@ -94,7 +93,6 @@
             this.panel1.Controls.Add(this.btnDangXuat);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.lblPhim);
-            this.panel1.Controls.Add(this.blBCTK);
             this.panel1.Controls.Add(this.lblVe);
             this.panel1.Controls.Add(this.lblTK);
             this.panel1.Controls.Add(this.lblNS);
@@ -129,7 +127,7 @@
             this.label9.Location = new System.Drawing.Point(895, 14);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 16);
+            this.label9.Size = new System.Drawing.Size(134, 20);
             this.label9.TabIndex = 9;
             this.label9.Text = "Xin Chào Admin ";
             this.label9.UseWaitCursor = true;
@@ -140,24 +138,12 @@
             this.lblPhim.Location = new System.Drawing.Point(555, 11);
             this.lblPhim.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhim.Name = "lblPhim";
-            this.lblPhim.Size = new System.Drawing.Size(40, 16);
+            this.lblPhim.Size = new System.Drawing.Size(52, 20);
             this.lblPhim.TabIndex = 7;
             this.lblPhim.Text = "Phim ";
             this.lblPhim.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblPhim.UseWaitCursor = true;
             this.lblPhim.Click += new System.EventHandler(this.lblPhim_Click);
-            // 
-            // blBCTK
-            // 
-            this.blBCTK.AutoSize = true;
-            this.blBCTK.Location = new System.Drawing.Point(627, 11);
-            this.blBCTK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.blBCTK.Name = "blBCTK";
-            this.blBCTK.Size = new System.Drawing.Size(131, 16);
-            this.blBCTK.TabIndex = 6;
-            this.blBCTK.Text = "Báo Cáo - Thống Kê ";
-            this.blBCTK.UseWaitCursor = true;
-            this.blBCTK.Click += new System.EventHandler(this.blBCTK_Click);
             // 
             // lblVe
             // 
@@ -165,7 +151,7 @@
             this.lblVe.Location = new System.Drawing.Point(499, 12);
             this.lblVe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVe.Name = "lblVe";
-            this.lblVe.Size = new System.Drawing.Size(24, 16);
+            this.lblVe.Size = new System.Drawing.Size(29, 20);
             this.lblVe.TabIndex = 5;
             this.lblVe.Text = "Vé";
             this.lblVe.UseWaitCursor = true;
@@ -177,7 +163,7 @@
             this.lblTK.Location = new System.Drawing.Point(396, 11);
             this.lblTK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTK.Name = "lblTK";
-            this.lblTK.Size = new System.Drawing.Size(71, 16);
+            this.lblTK.Size = new System.Drawing.Size(89, 20);
             this.lblTK.TabIndex = 4;
             this.lblTK.Text = "Tài Khoản ";
             this.lblTK.UseWaitCursor = true;
@@ -189,7 +175,7 @@
             this.lblNS.Location = new System.Drawing.Point(303, 11);
             this.lblNS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNS.Name = "lblNS";
-            this.lblNS.Size = new System.Drawing.Size(61, 16);
+            this.lblNS.Size = new System.Drawing.Size(78, 20);
             this.lblNS.TabIndex = 3;
             this.lblNS.Text = "Nhân Sự ";
             this.lblNS.UseWaitCursor = true;
@@ -201,7 +187,7 @@
             this.lblKH.Location = new System.Drawing.Point(188, 11);
             this.lblKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKH.Name = "lblKH";
-            this.lblKH.Size = new System.Drawing.Size(83, 16);
+            this.lblKH.Size = new System.Drawing.Size(106, 20);
             this.lblKH.TabIndex = 2;
             this.lblKH.Text = "Khách Hàng ";
             this.lblKH.UseWaitCursor = true;
@@ -213,7 +199,7 @@
             this.lblRap.Location = new System.Drawing.Point(120, 11);
             this.lblRap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRap.Name = "lblRap";
-            this.lblRap.Size = new System.Drawing.Size(36, 16);
+            this.lblRap.Size = new System.Drawing.Size(44, 20);
             this.lblRap.TabIndex = 1;
             this.lblRap.Text = "Rạp ";
             this.lblRap.UseWaitCursor = true;
@@ -225,7 +211,7 @@
             this.blTC.Location = new System.Drawing.Point(16, 11);
             this.blTC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.blTC.Name = "blTC";
-            this.blTC.Size = new System.Drawing.Size(72, 16);
+            this.blTC.Size = new System.Drawing.Size(92, 20);
             this.blTC.TabIndex = 0;
             this.blTC.Text = "Trang Chủ ";
             this.blTC.UseWaitCursor = true;
@@ -249,7 +235,7 @@
             this.label10.Location = new System.Drawing.Point(533, 34);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(192, 31);
+            this.label10.Size = new System.Drawing.Size(238, 39);
             this.label10.TabIndex = 0;
             this.label10.Text = "Quản Lý Rạp ";
             this.label10.UseWaitCursor = true;
@@ -344,7 +330,7 @@
             // 
             this.txtViTri.Location = new System.Drawing.Point(101, 251);
             this.txtViTri.Name = "txtViTri";
-            this.txtViTri.Size = new System.Drawing.Size(153, 22);
+            this.txtViTri.Size = new System.Drawing.Size(153, 26);
             this.txtViTri.TabIndex = 9;
             this.txtViTri.UseWaitCursor = true;
             // 
@@ -353,7 +339,7 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(27, 256);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(44, 16);
+            this.label16.Size = new System.Drawing.Size(59, 20);
             this.label16.TabIndex = 8;
             this.label16.Text = "Vị Trí :";
             this.label16.UseWaitCursor = true;
@@ -362,7 +348,7 @@
             // 
             this.txtTenRap.Location = new System.Drawing.Point(101, 188);
             this.txtTenRap.Name = "txtTenRap";
-            this.txtTenRap.Size = new System.Drawing.Size(153, 22);
+            this.txtTenRap.Size = new System.Drawing.Size(153, 26);
             this.txtTenRap.TabIndex = 7;
             this.txtTenRap.UseWaitCursor = true;
             // 
@@ -371,7 +357,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(27, 193);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(66, 16);
+            this.label15.Size = new System.Drawing.Size(82, 20);
             this.label15.TabIndex = 6;
             this.label15.Text = "Tên Rạp :";
             this.label15.UseWaitCursor = true;
@@ -380,7 +366,7 @@
             // 
             this.txtMaRap.Location = new System.Drawing.Point(101, 125);
             this.txtMaRap.Name = "txtMaRap";
-            this.txtMaRap.Size = new System.Drawing.Size(153, 22);
+            this.txtMaRap.Size = new System.Drawing.Size(153, 26);
             this.txtMaRap.TabIndex = 5;
             this.txtMaRap.UseWaitCursor = true;
             // 
@@ -389,7 +375,7 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(27, 130);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(64, 16);
+            this.label14.Size = new System.Drawing.Size(82, 20);
             this.label14.TabIndex = 4;
             this.label14.Text = "Mã Rạp : ";
             this.label14.UseWaitCursor = true;
@@ -459,9 +445,10 @@
             this.R_name,
             this.diaChi});
             this.dgvRap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvRap.Location = new System.Drawing.Point(3, 18);
+            this.dgvRap.Location = new System.Drawing.Point(3, 22);
             this.dgvRap.Name = "dgvRap";
-            this.dgvRap.Size = new System.Drawing.Size(857, 394);
+            this.dgvRap.RowHeadersWidth = 51;
+            this.dgvRap.Size = new System.Drawing.Size(857, 390);
             this.dgvRap.TabIndex = 0;
             this.dgvRap.UseWaitCursor = true;
             this.dgvRap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRap_CellClick);
@@ -472,6 +459,7 @@
             this.R_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.R_id.DataPropertyName = "R_id";
             this.R_id.HeaderText = "Mã Rạp";
+            this.R_id.MinimumWidth = 6;
             this.R_id.Name = "R_id";
             // 
             // R_name
@@ -479,6 +467,7 @@
             this.R_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.R_name.DataPropertyName = "R_name";
             this.R_name.HeaderText = "Tên Rạp ";
+            this.R_name.MinimumWidth = 6;
             this.R_name.Name = "R_name";
             // 
             // diaChi
@@ -486,6 +475,7 @@
             this.diaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.diaChi.DataPropertyName = "diaChi";
             this.diaChi.HeaderText = "Địa Chỉ";
+            this.diaChi.MinimumWidth = 6;
             this.diaChi.Name = "diaChi";
             // 
             // panel9
@@ -538,7 +528,7 @@
             // 
             this.txtTimKiem.Location = new System.Drawing.Point(209, 21);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(158, 22);
+            this.txtTimKiem.Size = new System.Drawing.Size(158, 26);
             this.txtTimKiem.TabIndex = 3;
             this.txtTimKiem.UseWaitCursor = true;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
@@ -548,7 +538,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(128, 28);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(69, 16);
+            this.label13.Size = new System.Drawing.Size(90, 20);
             this.label13.TabIndex = 2;
             this.label13.Text = "Tìm Kiếm  ";
             this.label13.UseWaitCursor = true;
@@ -559,7 +549,7 @@
             this.label11.Location = new System.Drawing.Point(20, 16);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(288, 16);
+            this.label11.Size = new System.Drawing.Size(372, 20);
             this.label11.TabIndex = 0;
             this.label11.Text = "Công Ty TNHH 3 thành viên | Phiên Bản 01LXH ";
             this.label11.UseWaitCursor = true;
@@ -633,7 +623,6 @@
         private System.Windows.Forms.Label lblRap;
         private System.Windows.Forms.Label blTC;
         private System.Windows.Forms.Label lblPhim;
-        private System.Windows.Forms.Label blBCTK;
         private System.Windows.Forms.Label lblVe;
         private System.Windows.Forms.Label lblTK;
         private System.Windows.Forms.Label lblNS;

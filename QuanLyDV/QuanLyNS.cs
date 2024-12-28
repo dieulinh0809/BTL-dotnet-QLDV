@@ -30,7 +30,8 @@ namespace QuanLyDV
                 lblTK.Enabled = false;
                 lblVe.Enabled = false;
                 lblPhim.Enabled = false;
-                blBCTK.Enabled = false;
+               
+
 
             }
             else if (LoaiTK == "QLNS")
@@ -40,7 +41,8 @@ namespace QuanLyDV
                 lblTK.Enabled = false;
                 lblVe.Enabled = false;
                 lblPhim.Enabled = false;
-                blBCTK.Enabled = false;
+               
+
             }
             else if (LoaiTK == "QLP")
             {
@@ -49,7 +51,8 @@ namespace QuanLyDV
                 lblTK.Enabled = false;
                 lblVe.Enabled = false;
                 lblNS.Enabled = false;
-                blBCTK.Enabled = false;
+               
+
             }
             else if (LoaiTK == "QLV")
             {
@@ -58,7 +61,8 @@ namespace QuanLyDV
                 lblTK.Enabled = false;
                 lblPhim.Enabled = false;
                 lblNS.Enabled = false;
-                blBCTK.Enabled = false;
+                
+
             }
             else
             {

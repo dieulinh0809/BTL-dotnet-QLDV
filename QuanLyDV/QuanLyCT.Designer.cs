@@ -34,7 +34,6 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblPhim = new System.Windows.Forms.Label();
-            this.blBCTK = new System.Windows.Forms.Label();
             this.lblVe = new System.Windows.Forms.Label();
             this.lblTK = new System.Windows.Forms.Label();
             this.lblNS = new System.Windows.Forms.Label();
@@ -60,9 +59,10 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(15, 13);
+            this.label11.Location = new System.Drawing.Point(20, 16);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(239, 13);
+            this.label11.Size = new System.Drawing.Size(288, 16);
             this.label11.TabIndex = 0;
             this.label11.Text = "Công Ty TNHH 3 thành viên | Phiên Bản 01LXH ";
             this.label11.UseWaitCursor = true;
@@ -76,7 +76,6 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.lblPhim);
-            this.panel1.Controls.Add(this.blBCTK);
             this.panel1.Controls.Add(this.lblVe);
             this.panel1.Controls.Add(this.lblTK);
             this.panel1.Controls.Add(this.lblNS);
@@ -87,43 +86,32 @@
             this.panel1.Controls.Add(this.label9);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(920, 31);
+            this.panel1.Size = new System.Drawing.Size(1227, 38);
             this.panel1.TabIndex = 4;
             this.panel1.UseWaitCursor = true;
             // 
             // lblPhim
             // 
             this.lblPhim.AutoSize = true;
-            this.lblPhim.Location = new System.Drawing.Point(403, 11);
-            this.lblPhim.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPhim.Location = new System.Drawing.Point(537, 14);
+            this.lblPhim.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblPhim.Name = "lblPhim";
-            this.lblPhim.Size = new System.Drawing.Size(33, 13);
+            this.lblPhim.Size = new System.Drawing.Size(40, 16);
             this.lblPhim.TabIndex = 18;
             this.lblPhim.Text = "Phim ";
             this.lblPhim.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblPhim.UseWaitCursor = true;
             this.lblPhim.Click += new System.EventHandler(this.lblPhim_Click);
             // 
-            // blBCTK
-            // 
-            this.blBCTK.AutoSize = true;
-            this.blBCTK.Location = new System.Drawing.Point(454, 11);
-            this.blBCTK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.blBCTK.Name = "blBCTK";
-            this.blBCTK.Size = new System.Drawing.Size(107, 13);
-            this.blBCTK.TabIndex = 17;
-            this.blBCTK.Text = "Báo Cáo - Thống Kê ";
-            this.blBCTK.UseWaitCursor = true;
-            this.blBCTK.Click += new System.EventHandler(this.blBCTK_Click);
-            // 
             // lblVe
             // 
             this.lblVe.AutoSize = true;
-            this.lblVe.Location = new System.Drawing.Point(361, 11);
-            this.lblVe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblVe.Location = new System.Drawing.Point(481, 14);
+            this.lblVe.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblVe.Name = "lblVe";
-            this.lblVe.Size = new System.Drawing.Size(20, 13);
+            this.lblVe.Size = new System.Drawing.Size(24, 16);
             this.lblVe.TabIndex = 16;
             this.lblVe.Text = "Vé";
             this.lblVe.UseWaitCursor = true;
@@ -132,10 +120,10 @@
             // lblTK
             // 
             this.lblTK.AutoSize = true;
-            this.lblTK.Location = new System.Drawing.Point(282, 11);
-            this.lblTK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTK.Location = new System.Drawing.Point(376, 14);
+            this.lblTK.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblTK.Name = "lblTK";
-            this.lblTK.Size = new System.Drawing.Size(59, 13);
+            this.lblTK.Size = new System.Drawing.Size(71, 16);
             this.lblTK.TabIndex = 15;
             this.lblTK.Text = "Tài Khoản ";
             this.lblTK.UseWaitCursor = true;
@@ -144,10 +132,10 @@
             // lblNS
             // 
             this.lblNS.AutoSize = true;
-            this.lblNS.Location = new System.Drawing.Point(211, 11);
-            this.lblNS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNS.Location = new System.Drawing.Point(281, 14);
+            this.lblNS.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblNS.Name = "lblNS";
-            this.lblNS.Size = new System.Drawing.Size(52, 13);
+            this.lblNS.Size = new System.Drawing.Size(61, 16);
             this.lblNS.TabIndex = 14;
             this.lblNS.Text = "Nhân Sự ";
             this.lblNS.UseWaitCursor = true;
@@ -156,10 +144,10 @@
             // lblKH
             // 
             this.lblKH.AutoSize = true;
-            this.lblKH.Location = new System.Drawing.Point(133, 10);
-            this.lblKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblKH.Location = new System.Drawing.Point(177, 12);
+            this.lblKH.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblKH.Name = "lblKH";
-            this.lblKH.Size = new System.Drawing.Size(70, 13);
+            this.lblKH.Size = new System.Drawing.Size(83, 16);
             this.lblKH.TabIndex = 13;
             this.lblKH.Text = "Khách Hàng ";
             this.lblKH.UseWaitCursor = true;
@@ -168,10 +156,10 @@
             // lblRap
             // 
             this.lblRap.AutoSize = true;
-            this.lblRap.Location = new System.Drawing.Point(80, 11);
-            this.lblRap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRap.Location = new System.Drawing.Point(107, 14);
+            this.lblRap.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblRap.Name = "lblRap";
-            this.lblRap.Size = new System.Drawing.Size(30, 13);
+            this.lblRap.Size = new System.Drawing.Size(36, 16);
             this.lblRap.TabIndex = 12;
             this.lblRap.Text = "Rạp ";
             this.lblRap.UseWaitCursor = true;
@@ -180,10 +168,10 @@
             // blTC
             // 
             this.blTC.AutoSize = true;
-            this.blTC.Location = new System.Drawing.Point(12, 10);
-            this.blTC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.blTC.Location = new System.Drawing.Point(16, 12);
+            this.blTC.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.blTC.Name = "blTC";
-            this.blTC.Size = new System.Drawing.Size(60, 13);
+            this.blTC.Size = new System.Drawing.Size(72, 16);
             this.blTC.TabIndex = 11;
             this.blTC.Text = "Trang Chủ ";
             this.blTC.UseWaitCursor = true;
@@ -193,10 +181,10 @@
             // 
             this.btnDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.Image")));
             this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangXuat.Location = new System.Drawing.Point(780, 2);
-            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDangXuat.Location = new System.Drawing.Point(1040, 2);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(106, 29);
+            this.btnDangXuat.Size = new System.Drawing.Size(141, 36);
             this.btnDangXuat.TabIndex = 10;
             this.btnDangXuat.Text = "Đăng Xuất ";
             this.btnDangXuat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -207,9 +195,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(671, 11);
+            this.label9.Location = new System.Drawing.Point(895, 14);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 13);
+            this.label9.Size = new System.Drawing.Size(104, 16);
             this.label9.TabIndex = 9;
             this.label9.Text = "Xin Chào Admin ";
             this.label9.UseWaitCursor = true;
@@ -219,9 +208,10 @@
             this.panel2.Controls.Add(this.lblTenRap);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 31);
+            this.panel2.Location = new System.Drawing.Point(0, 38);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(920, 64);
+            this.panel2.Size = new System.Drawing.Size(1227, 79);
             this.panel2.TabIndex = 5;
             this.panel2.UseWaitCursor = true;
             // 
@@ -229,9 +219,10 @@
             // 
             this.lblTenRap.AutoSize = true;
             this.lblTenRap.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenRap.Location = new System.Drawing.Point(501, 15);
+            this.lblTenRap.Location = new System.Drawing.Point(668, 18);
+            this.lblTenRap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTenRap.Name = "lblTenRap";
-            this.lblTenRap.Size = new System.Drawing.Size(125, 31);
+            this.lblTenRap.Size = new System.Drawing.Size(155, 39);
             this.lblTenRap.TabIndex = 1;
             this.lblTenRap.Text = "Tên Rạp";
             this.lblTenRap.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -241,9 +232,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(314, 15);
+            this.label10.Location = new System.Drawing.Point(419, 18);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(192, 31);
+            this.label10.Size = new System.Drawing.Size(238, 39);
             this.label10.TabIndex = 0;
             this.label10.Text = "Quản Lý Rạp ";
             this.label10.UseWaitCursor = true;
@@ -256,8 +248,9 @@
             this.panel4.Controls.Add(this.btnNV);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(920, 403);
+            this.panel4.Size = new System.Drawing.Size(1227, 496);
             this.panel4.TabIndex = 7;
             this.panel4.UseWaitCursor = true;
             // 
@@ -265,10 +258,10 @@
             // 
             this.btnLC.Image = ((System.Drawing.Image)(resources.GetObject("btnLC.Image")));
             this.btnLC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLC.Location = new System.Drawing.Point(668, 214);
-            this.btnLC.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLC.Location = new System.Drawing.Point(891, 263);
+            this.btnLC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLC.Name = "btnLC";
-            this.btnLC.Size = new System.Drawing.Size(119, 53);
+            this.btnLC.Size = new System.Drawing.Size(159, 65);
             this.btnLC.TabIndex = 13;
             this.btnLC.Text = "Lịch Chiếu ";
             this.btnLC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -280,10 +273,10 @@
             // 
             this.btnPC.Image = ((System.Drawing.Image)(resources.GetObject("btnPC.Image")));
             this.btnPC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPC.Location = new System.Drawing.Point(406, 214);
-            this.btnPC.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPC.Location = new System.Drawing.Point(541, 263);
+            this.btnPC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPC.Name = "btnPC";
-            this.btnPC.Size = new System.Drawing.Size(122, 53);
+            this.btnPC.Size = new System.Drawing.Size(163, 65);
             this.btnPC.TabIndex = 12;
             this.btnPC.Text = "Phòng Chiếu ";
             this.btnPC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -295,10 +288,10 @@
             // 
             this.btnNV.Image = ((System.Drawing.Image)(resources.GetObject("btnNV.Image")));
             this.btnNV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNV.Location = new System.Drawing.Point(125, 214);
-            this.btnNV.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNV.Location = new System.Drawing.Point(167, 263);
+            this.btnNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNV.Name = "btnNV";
-            this.btnNV.Size = new System.Drawing.Size(119, 53);
+            this.btnNV.Size = new System.Drawing.Size(159, 65);
             this.btnNV.TabIndex = 11;
             this.btnNV.Text = "Nhân Viên ";
             this.btnNV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -310,22 +303,23 @@
             // 
             this.panel3.Controls.Add(this.label11);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 403);
+            this.panel3.Location = new System.Drawing.Point(0, 496);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(920, 39);
+            this.panel3.Size = new System.Drawing.Size(1227, 48);
             this.panel3.TabIndex = 6;
             this.panel3.UseWaitCursor = true;
             // 
             // QuanLyCT
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(920, 442);
+            this.ClientSize = new System.Drawing.Size(1227, 544);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "QuanLyCT";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
@@ -357,7 +351,6 @@
         private System.Windows.Forms.Button btnLC;
         private System.Windows.Forms.Button btnPC;
         private System.Windows.Forms.Label lblPhim;
-        private System.Windows.Forms.Label blBCTK;
         private System.Windows.Forms.Label lblVe;
         private System.Windows.Forms.Label lblTK;
         private System.Windows.Forms.Label lblNS;

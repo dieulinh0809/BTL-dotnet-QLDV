@@ -37,7 +37,6 @@
             this.lblVe = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblPhim = new System.Windows.Forms.Label();
-            this.blBCTK = new System.Windows.Forms.Label();
             this.lblTK = new System.Windows.Forms.Label();
             this.lblNS = new System.Windows.Forms.Label();
             this.lblKH = new System.Windows.Forms.Label();
@@ -158,7 +157,6 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.lblPhim);
-            this.panel1.Controls.Add(this.blBCTK);
             this.panel1.Controls.Add(this.lblVe);
             this.panel1.Controls.Add(this.lblTK);
             this.panel1.Controls.Add(this.lblNS);
@@ -186,17 +184,6 @@
             this.lblPhim.Text = "Phim ";
             this.lblPhim.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblPhim.UseWaitCursor = true;
-            // 
-            // blBCTK
-            // 
-            this.blBCTK.AutoSize = true;
-            this.blBCTK.Location = new System.Drawing.Point(837, 17);
-            this.blBCTK.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.blBCTK.Name = "blBCTK";
-            this.blBCTK.Size = new System.Drawing.Size(131, 16);
-            this.blBCTK.TabIndex = 17;
-            this.blBCTK.Text = "Báo Cáo - Thống Kê ";
-            this.blBCTK.UseWaitCursor = true;
             // 
             // lblTK
             // 
@@ -728,7 +715,6 @@
         private System.Windows.Forms.Label lblVe;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblPhim;
-        private System.Windows.Forms.Label blBCTK;
         private System.Windows.Forms.Label lblTK;
         private System.Windows.Forms.Label lblNS;
         private System.Windows.Forms.Label lblKH;
