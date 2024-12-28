@@ -67,6 +67,14 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <Compile Include="QLVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLVe.Designer.cs">
+      <DependentUpon>QLVe.cs</DependentUpon>
+=======
     <Compile Include="fQuanLyKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,7 +92,10 @@
     </Compile>
     <Compile Include="fTrangChu.Designer.cs">
       <DependentUpon>fTrangChu.cs</DependentUpon>
+>>>>>>> bbb7091506717a46c7f34c3e42815cbe1cda1de0
     </Compile>
+=======
+>>>>>>> parent of f226340 (uk)
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLGhe.cs">
@@ -144,6 +155,11 @@
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <EmbeddedResource Include="QLVe.resx">
+      <DependentUpon>QLVe.cs</DependentUpon>
+=======
     <EmbeddedResource Include="fQuanLyKhachHang.resx">
       <DependentUpon>fQuanLyKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,7 +168,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fTrangChu.resx">
       <DependentUpon>fTrangChu.cs</DependentUpon>
+>>>>>>> bbb7091506717a46c7f34c3e42815cbe1cda1de0
     </EmbeddedResource>
+=======
+>>>>>>> parent of f226340 (uk)
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
