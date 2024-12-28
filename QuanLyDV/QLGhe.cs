@@ -163,8 +163,6 @@ namespace QuanLyDV
         {
 
             string query = "select * from Ghe  where PC_id ='" + maPC + "' and ( PC_id like  '%" + timKiem + "%' or idG = '" + timKiem + "')";
-
-
             adapter = new SqlDataAdapter(query, con);
             SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder();
             ds = new DataSet();
