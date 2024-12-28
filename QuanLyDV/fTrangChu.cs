@@ -115,5 +115,40 @@ namespace fTrangchu
         {
 
         }
+
+        private void lblKH_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblVe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNS_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPhim_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void blTC_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

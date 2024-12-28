@@ -141,28 +141,47 @@ namespace fTrangchu
             }
         }
 
-        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+         
+
+        private void blTC_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void nhânSựToolStripMenuItem_Click(object sender, EventArgs e)
+        private void lblRap_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            fQuanLyNhanVien fQLNV = new fQuanLyNhanVien();
-            fQLNV.ShowDialog();
-            fQLNV = null;
-            this.Show();
+
+        }
+
+        private void lblKH_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNS_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblVe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPhim_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
