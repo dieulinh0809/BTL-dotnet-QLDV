@@ -117,6 +117,12 @@
     <Compile Include="QLR_PC.Designer.cs">
       <DependentUpon>QLR_PC.cs</DependentUpon>
     </Compile>
+    <Compile Include="QLVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLVe.Designer.cs">
+      <DependentUpon>QLVe.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanLyCT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QLR_PC.resx">
       <DependentUpon>QLR_PC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLVe.resx">
+      <DependentUpon>QLVe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyCT.resx">
       <DependentUpon>QuanLyCT.cs</DependentUpon>
