@@ -74,7 +74,7 @@ namespace QuanLyDV
             PhanQuyen(LoaiTK);
         }
         //Chuoi Ket Noi 
-        string str = @"Data Source=DESKTOP-RT4JUIV\SQLEXPRESS;Initial Catalog=CGV05;Integrated Security=True;Encrypt=False "
+        string str = @"Data Source=DESKTOP-240NOH8\SQLEXPRESS01;Initial Catalog=CGV05;Integrated Security=True;Encrypt=False "
 ;
         //Doi tuong ket noi 
         SqlConnection con = null;

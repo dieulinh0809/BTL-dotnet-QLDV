@@ -33,3 +33,4 @@ C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\QLR.csproj.CoreCompil
 C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\QuanLyDV.exe
 C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\QuanLyDV.pdb
 C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\QuanLyDV.QLR_Ve.resources
+C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\QuanLyDV.QLVe.resources

@@ -67,6 +67,12 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="QLVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLVe.Designer.cs">
+      <DependentUpon>QLVe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLGhe.cs">
@@ -80,12 +86,6 @@
     </Compile>
     <Compile Include="QLRap.Designer.cs">
       <DependentUpon>QLRap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLR_LC.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QLR_LC.Designer.cs">
-      <DependentUpon>QLR_LC.cs</DependentUpon>
     </Compile>
     <Compile Include="QLR_NV.cs">
       <SubType>Form</SubType>
@@ -114,6 +114,9 @@
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QLVe.resx">
+      <DependentUpon>QLVe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -128,9 +131,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QLRap.resx">
       <DependentUpon>QLRap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QLR_LC.resx">
-      <DependentUpon>QLR_LC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QLR_NV.resx">
       <DependentUpon>QLR_NV.cs</DependentUpon>
