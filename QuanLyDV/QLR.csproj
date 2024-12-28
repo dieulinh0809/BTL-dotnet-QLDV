@@ -67,6 +67,24 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="fQuanLyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuanLyKhachHang.Designer.cs">
+      <DependentUpon>fQuanLyKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQuanLyPhim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuanLyPhim.Designer.cs">
+      <DependentUpon>fQuanLyPhim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTrangChu.Designer.cs">
+      <DependentUpon>fTrangChu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLGhe.cs">
@@ -111,8 +129,29 @@
     <Compile Include="QuanLyNS.Designer.cs">
       <DependentUpon>QuanLyNS.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCphim2d.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCphim2d.Designer.cs">
+      <DependentUpon>UCphim2d.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCphim3d.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCphim3d.Designer.cs">
+      <DependentUpon>UCphim3d.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQuanLyKhachHang.resx">
+      <DependentUpon>fQuanLyKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQuanLyPhim.resx">
+      <DependentUpon>fQuanLyPhim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTrangChu.resx">
+      <DependentUpon>fTrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -143,6 +182,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyNS.resx">
       <DependentUpon>QuanLyNS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCphim2d.resx">
+      <DependentUpon>UCphim2d.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCphim3d.resx">
+      <DependentUpon>UCphim3d.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
