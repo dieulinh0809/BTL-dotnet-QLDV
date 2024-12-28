@@ -389,7 +389,10 @@ namespace QLR
 
         private void lblVe_Click(object sender, EventArgs e)
         {
-
+            QLVe form1 = new QLVe();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
         }
 
         private void lblPhim_Click(object sender, EventArgs e)

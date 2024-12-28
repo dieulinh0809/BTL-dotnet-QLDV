@@ -87,7 +87,7 @@
             this.status});
             this.dgvLCR.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvLCR.Location = new System.Drawing.Point(4, 19);
-            this.dgvLCR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvLCR.Margin = new System.Windows.Forms.Padding(4);
             this.dgvLCR.Name = "dgvLCR";
             this.dgvLCR.RowHeadersWidth = 51;
             this.dgvLCR.Size = new System.Drawing.Size(1215, 574);
@@ -125,7 +125,7 @@
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThem.Location = new System.Drawing.Point(7, 542);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(113, 44);
             this.btnThem.TabIndex = 0;
@@ -141,7 +141,7 @@
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoa.Location = new System.Drawing.Point(264, 542);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(113, 44);
             this.btnXoa.TabIndex = 2;
@@ -157,7 +157,7 @@
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSua.Location = new System.Drawing.Point(135, 542);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(113, 44);
             this.btnSua.TabIndex = 1;
@@ -171,7 +171,7 @@
             // 
             this.txtGhiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGhiChu.Location = new System.Drawing.Point(135, 337);
-            this.txtGhiChu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGhiChu.Margin = new System.Windows.Forms.Padding(4);
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Size = new System.Drawing.Size(203, 26);
             this.txtGhiChu.TabIndex = 9;
@@ -205,7 +205,7 @@
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.Location = new System.Drawing.Point(299, 54);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(209, 26);
             this.txtTimKiem.TabIndex = 6;
@@ -218,7 +218,7 @@
             this.btnTK.Image = ((System.Drawing.Image)(resources.GetObject("btnTK.Image")));
             this.btnTK.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnTK.Location = new System.Drawing.Point(563, 43);
-            this.btnTK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTK.Margin = new System.Windows.Forms.Padding(4);
             this.btnTK.Name = "btnTK";
             this.btnTK.Size = new System.Drawing.Size(59, 58);
             this.btnTK.TabIndex = 7;
@@ -230,7 +230,7 @@
             // 
             this.txtMaG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaG.Location = new System.Drawing.Point(135, 182);
-            this.txtMaG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaG.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaG.Name = "txtMaG";
             this.txtMaG.Size = new System.Drawing.Size(203, 26);
             this.txtMaG.TabIndex = 5;
@@ -253,7 +253,7 @@
             this.panel6.Controls.Add(this.groupBox3);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel6.Location = new System.Drawing.Point(1246, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel6.Margin = new System.Windows.Forms.Padding(5);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(389, 660);
             this.panel6.TabIndex = 1;
@@ -272,9 +272,9 @@
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(389, 660);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
@@ -285,7 +285,7 @@
             // 
             this.txtMaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaPhong.Location = new System.Drawing.Point(135, 260);
-            this.txtMaPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaPhong.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaPhong.Name = "txtMaPhong";
             this.txtMaPhong.Size = new System.Drawing.Size(203, 26);
             this.txtMaPhong.TabIndex = 7;
@@ -311,7 +311,7 @@
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 144);
-            this.panel4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel4.Margin = new System.Windows.Forms.Padding(5);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1635, 660);
             this.panel4.TabIndex = 19;
@@ -321,9 +321,9 @@
             // 
             this.groupBox2.Controls.Add(this.dgvLCR);
             this.groupBox2.Location = new System.Drawing.Point(0, 132);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(1223, 597);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
@@ -336,9 +336,9 @@
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.btnTK);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1224, 123);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
@@ -349,7 +349,7 @@
             // panel5
             // 
             this.panel5.Location = new System.Drawing.Point(4, 106);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1184, 123);
             this.panel5.TabIndex = 2;
@@ -360,7 +360,7 @@
             this.panel3.Controls.Add(this.label11);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 804);
-            this.panel3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1635, 59);
             this.panel3.TabIndex = 18;
@@ -382,7 +382,7 @@
             this.btnDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.Image")));
             this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDangXuat.Location = new System.Drawing.Point(1387, 2);
-            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(148, 44);
             this.btnDangXuat.TabIndex = 10;
@@ -399,7 +399,7 @@
             this.panel2.Controls.Add(this.label10);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 47);
-            this.panel2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1635, 97);
             this.panel2.TabIndex = 17;
@@ -454,7 +454,7 @@
             this.panel1.Controls.Add(this.label9);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1635, 47);
             this.panel1.TabIndex = 16;
@@ -570,7 +570,7 @@
             this.Name = "QLGhe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QLGhe";
-            this.Load += new System.EventHandler(this.QLGhe_Load);
+            this.Load += new System.EventHandler(this.lblRap_Click);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLCR)).EndInit();
             this.panel6.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);

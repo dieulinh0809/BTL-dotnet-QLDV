@@ -346,7 +346,7 @@ namespace QuanLyDV
 
         private void lblKH_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void lblNS_Click(object sender, EventArgs e)
@@ -364,7 +364,10 @@ namespace QuanLyDV
 
         private void lblVe_Click(object sender, EventArgs e)
         {
-
+            QLVe form1 = new QLVe();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
         }
 
         private void lblPhim_Click(object sender, EventArgs e)

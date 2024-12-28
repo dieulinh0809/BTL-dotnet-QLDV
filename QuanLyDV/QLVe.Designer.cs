@@ -153,6 +153,7 @@
             this.lblVe.TabIndex = 16;
             this.lblVe.Text = "Vé";
             this.lblVe.UseWaitCursor = true;
+            this.lblVe.Click += new System.EventHandler(this.lblVe_Click);
             // 
             // panel1
             // 
@@ -218,6 +219,7 @@
             this.lblNS.TabIndex = 14;
             this.lblNS.Text = "Nhân Sự ";
             this.lblNS.UseWaitCursor = true;
+            this.lblNS.Click += new System.EventHandler(this.lblNS_Click);
             // 
             // lblKH
             // 
@@ -240,6 +242,7 @@
             this.lblRap.TabIndex = 12;
             this.lblRap.Text = "Rạp ";
             this.lblRap.UseWaitCursor = true;
+            this.lblRap.Click += new System.EventHandler(this.lblRap_Click);
             // 
             // blTC
             // 

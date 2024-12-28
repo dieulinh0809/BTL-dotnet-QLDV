@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using QLR;
 
 namespace QuanLyDV
 {
@@ -286,6 +287,27 @@ namespace QuanLyDV
             XoaDuLieu();
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
+
+        }
+
+        private void lblRap_Click(object sender, EventArgs e)
+        {
+            QLRap form1 = new QLRap();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
+        }
+
+        private void lblNS_Click(object sender, EventArgs e)
+        {
+            QuanLyNS form1 = new QuanLyNS();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
+        }
+
+        private void lblVe_Click(object sender, EventArgs e)
+        {
 
         }
     }
