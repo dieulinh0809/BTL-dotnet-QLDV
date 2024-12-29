@@ -16,13 +16,13 @@ namespace QuanLyDV
 {
     public partial class QLGhe : Form
     {
-        public static string LoaiTK;
+      
         public QLGhe()
         {
             InitializeComponent();
         }
         public string maPC;
-
+        public static string LoaiTK;
         private void PhanQuyen(string LoaiTK)
         {
             if (LoaiTK == "QLR")
@@ -389,7 +389,10 @@ namespace QuanLyDV
 
         private void blBCTK_Click(object sender, EventArgs e)
         {
-
+            fQuanLyTaiKhoan  form1 = new fQuanLyTaiKhoan();
+            this.Hide(); 
+            form1.ShowDialog();
+            this.Show();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

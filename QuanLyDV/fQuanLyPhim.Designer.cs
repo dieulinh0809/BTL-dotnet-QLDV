@@ -83,10 +83,11 @@
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(60, 100);
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1184, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1184, 36);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -96,7 +97,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(909, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 19);
+            this.label1.Size = new System.Drawing.Size(99, 27);
             this.label1.TabIndex = 6;
             this.label1.Text = "Xin chào";
             // 
@@ -145,7 +146,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label2.Location = new System.Drawing.Point(470, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(221, 43);
+            this.label2.Size = new System.Drawing.Size(323, 65);
             this.label2.TabIndex = 7;
             this.label2.Text = "Quản lí phim";
             // 
@@ -207,7 +208,7 @@
             // 
             this.txtidLP.Location = new System.Drawing.Point(116, 458);
             this.txtidLP.Name = "txtidLP";
-            this.txtidLP.Size = new System.Drawing.Size(152, 26);
+            this.txtidLP.Size = new System.Drawing.Size(152, 35);
             this.txtidLP.TabIndex = 23;
             this.txtidLP.TabStop = false;
             // 
@@ -217,7 +218,7 @@
             this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(13, 458);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(54, 19);
+            this.label13.Size = new System.Drawing.Size(84, 27);
             this.label13.TabIndex = 22;
             this.label13.Text = "ID LP: ";
             // 
@@ -226,70 +227,70 @@
             this.dtKhoiChieu.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtKhoiChieu.Location = new System.Drawing.Point(385, 349);
             this.dtKhoiChieu.Name = "dtKhoiChieu";
-            this.dtKhoiChieu.Size = new System.Drawing.Size(152, 26);
+            this.dtKhoiChieu.Size = new System.Drawing.Size(152, 35);
             this.dtKhoiChieu.TabIndex = 21;
             // 
             // txtNgonNgu
             // 
             this.txtNgonNgu.Location = new System.Drawing.Point(385, 458);
             this.txtNgonNgu.Name = "txtNgonNgu";
-            this.txtNgonNgu.Size = new System.Drawing.Size(152, 26);
+            this.txtNgonNgu.Size = new System.Drawing.Size(152, 35);
             this.txtNgonNgu.TabIndex = 20;
             // 
             // txtMoTa
             // 
             this.txtMoTa.Location = new System.Drawing.Point(385, 401);
             this.txtMoTa.Name = "txtMoTa";
-            this.txtMoTa.Size = new System.Drawing.Size(152, 26);
+            this.txtMoTa.Size = new System.Drawing.Size(152, 35);
             this.txtMoTa.TabIndex = 19;
             // 
             // txtDienVien
             // 
             this.txtDienVien.Location = new System.Drawing.Point(385, 294);
             this.txtDienVien.Name = "txtDienVien";
-            this.txtDienVien.Size = new System.Drawing.Size(152, 26);
+            this.txtDienVien.Size = new System.Drawing.Size(152, 35);
             this.txtDienVien.TabIndex = 17;
             // 
             // txttrangthai
             // 
             this.txttrangthai.Location = new System.Drawing.Point(266, 511);
             this.txttrangthai.Name = "txttrangthai";
-            this.txttrangthai.Size = new System.Drawing.Size(152, 26);
+            this.txttrangthai.Size = new System.Drawing.Size(152, 35);
             this.txttrangthai.TabIndex = 16;
             // 
             // txtM_length
             // 
             this.txtM_length.Location = new System.Drawing.Point(116, 401);
             this.txtM_length.Name = "txtM_length";
-            this.txtM_length.Size = new System.Drawing.Size(152, 26);
+            this.txtM_length.Size = new System.Drawing.Size(152, 35);
             this.txtM_length.TabIndex = 15;
             // 
             // txtM_trailer
             // 
             this.txtM_trailer.Location = new System.Drawing.Point(116, 344);
             this.txtM_trailer.Name = "txtM_trailer";
-            this.txtM_trailer.Size = new System.Drawing.Size(152, 26);
+            this.txtM_trailer.Size = new System.Drawing.Size(152, 35);
             this.txtM_trailer.TabIndex = 14;
             // 
             // txtM_name
             // 
             this.txtM_name.Location = new System.Drawing.Point(116, 284);
             this.txtM_name.Name = "txtM_name";
-            this.txtM_name.Size = new System.Drawing.Size(152, 26);
+            this.txtM_name.Size = new System.Drawing.Size(152, 35);
             this.txtM_name.TabIndex = 13;
             // 
             // txtDaoDien
             // 
             this.txtDaoDien.Location = new System.Drawing.Point(385, 228);
             this.txtDaoDien.Name = "txtDaoDien";
-            this.txtDaoDien.Size = new System.Drawing.Size(152, 26);
+            this.txtDaoDien.Size = new System.Drawing.Size(152, 35);
             this.txtDaoDien.TabIndex = 12;
             // 
             // txtM_id
             // 
             this.txtM_id.Location = new System.Drawing.Point(116, 228);
             this.txtM_id.Name = "txtM_id";
-            this.txtM_id.Size = new System.Drawing.Size(152, 26);
+            this.txtM_id.Size = new System.Drawing.Size(152, 35);
             this.txtM_id.TabIndex = 11;
             // 
             // label12
@@ -298,7 +299,7 @@
             this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(274, 466);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 19);
+            this.label12.Size = new System.Drawing.Size(118, 27);
             this.label12.TabIndex = 10;
             this.label12.Text = "Ngôn ngữ :";
             // 
@@ -308,7 +309,7 @@
             this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(274, 409);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 19);
+            this.label11.Size = new System.Drawing.Size(87, 27);
             this.label11.TabIndex = 9;
             this.label11.Text = "Mô tả : ";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -319,7 +320,7 @@
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(274, 355);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 19);
+            this.label10.Size = new System.Drawing.Size(130, 27);
             this.label10.TabIndex = 8;
             this.label10.Text = "Khởi chiếu :";
             // 
@@ -329,7 +330,7 @@
             this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(274, 294);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(72, 19);
+            this.label9.Size = new System.Drawing.Size(117, 27);
             this.label9.TabIndex = 7;
             this.label9.Text = "Diễn viên :";
             // 
@@ -339,7 +340,7 @@
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(274, 236);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 19);
+            this.label8.Size = new System.Drawing.Size(111, 27);
             this.label8.TabIndex = 6;
             this.label8.Text = "Đạo diễn :";
             // 
@@ -349,7 +350,7 @@
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(133, 519);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 19);
+            this.label7.Size = new System.Drawing.Size(121, 27);
             this.label7.TabIndex = 5;
             this.label7.Text = "Trạng thái :";
             // 
@@ -359,7 +360,7 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(13, 404);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 19);
+            this.label6.Size = new System.Drawing.Size(94, 27);
             this.label6.TabIndex = 3;
             this.label6.Text = "Độ dài : ";
             // 
@@ -369,7 +370,7 @@
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(13, 347);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 19);
+            this.label5.Size = new System.Drawing.Size(87, 27);
             this.label5.TabIndex = 2;
             this.label5.Text = "Trailer :";
             // 
@@ -379,7 +380,7 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(10, 287);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 19);
+            this.label4.Size = new System.Drawing.Size(115, 27);
             this.label4.TabIndex = 1;
             this.label4.Text = "Tên phim :";
             // 
@@ -389,7 +390,7 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(13, 236);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 19);
+            this.label3.Size = new System.Drawing.Size(112, 27);
             this.label3.TabIndex = 0;
             this.label3.Text = "Mã Phim :";
             // 
@@ -467,10 +468,10 @@
             // 
             this.lblPhim.AutoSize = true;
             this.lblPhim.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhim.Location = new System.Drawing.Point(474, 15);
+            this.lblPhim.Location = new System.Drawing.Point(618, 15);
             this.lblPhim.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblPhim.Name = "lblPhim";
-            this.lblPhim.Size = new System.Drawing.Size(43, 19);
+            this.lblPhim.Size = new System.Drawing.Size(68, 27);
             this.lblPhim.TabIndex = 26;
             this.lblPhim.Text = "Phim ";
             this.lblPhim.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -481,10 +482,10 @@
             // 
             this.lblVe.AutoSize = true;
             this.lblVe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVe.Location = new System.Drawing.Point(430, 16);
+            this.lblVe.Location = new System.Drawing.Point(550, 16);
             this.lblVe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblVe.Name = "lblVe";
-            this.lblVe.Size = new System.Drawing.Size(27, 19);
+            this.lblVe.Size = new System.Drawing.Size(39, 27);
             this.lblVe.TabIndex = 25;
             this.lblVe.Text = "Vé";
             this.lblVe.UseWaitCursor = true;
@@ -494,10 +495,10 @@
             // 
             this.lblTK.AutoSize = true;
             this.lblTK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTK.Location = new System.Drawing.Point(341, 16);
+            this.lblTK.Location = new System.Drawing.Point(437, 16);
             this.lblTK.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTK.Name = "lblTK";
-            this.lblTK.Size = new System.Drawing.Size(77, 19);
+            this.lblTK.Size = new System.Drawing.Size(119, 27);
             this.lblTK.TabIndex = 24;
             this.lblTK.Text = "Tài Khoản ";
             this.lblTK.UseWaitCursor = true;
@@ -507,10 +508,10 @@
             // 
             this.lblNS.AutoSize = true;
             this.lblNS.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNS.Location = new System.Drawing.Point(259, 15);
+            this.lblNS.Location = new System.Drawing.Point(331, 15);
             this.lblNS.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNS.Name = "lblNS";
-            this.lblNS.Size = new System.Drawing.Size(68, 19);
+            this.lblNS.Size = new System.Drawing.Size(101, 27);
             this.lblNS.TabIndex = 23;
             this.lblNS.Text = "Nhân Sự ";
             this.lblNS.UseWaitCursor = true;
@@ -520,10 +521,10 @@
             // 
             this.lblKH.AutoSize = true;
             this.lblKH.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKH.Location = new System.Drawing.Point(146, 15);
+            this.lblKH.Location = new System.Drawing.Point(194, 15);
             this.lblKH.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblKH.Name = "lblKH";
-            this.lblKH.Size = new System.Drawing.Size(89, 19);
+            this.lblKH.Size = new System.Drawing.Size(138, 27);
             this.lblKH.TabIndex = 22;
             this.lblKH.Text = "Khách Hàng ";
             this.lblKH.UseWaitCursor = true;
@@ -533,10 +534,10 @@
             // 
             this.lblRap.AutoSize = true;
             this.lblRap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRap.Location = new System.Drawing.Point(96, 16);
+            this.lblRap.Location = new System.Drawing.Point(127, 15);
             this.lblRap.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblRap.Name = "lblRap";
-            this.lblRap.Size = new System.Drawing.Size(38, 19);
+            this.lblRap.Size = new System.Drawing.Size(57, 27);
             this.lblRap.TabIndex = 21;
             this.lblRap.Text = "Rạp ";
             this.lblRap.UseWaitCursor = true;
@@ -549,7 +550,7 @@
             this.blTC.Location = new System.Drawing.Point(6, 16);
             this.blTC.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.blTC.Name = "blTC";
-            this.blTC.Size = new System.Drawing.Size(76, 19);
+            this.blTC.Size = new System.Drawing.Size(119, 27);
             this.blTC.TabIndex = 20;
             this.blTC.Text = "Trang Chủ ";
             this.blTC.UseWaitCursor = true;
@@ -557,7 +558,7 @@
             // 
             // fQuanLyPhim
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 690);
             this.Controls.Add(this.lblPhim);

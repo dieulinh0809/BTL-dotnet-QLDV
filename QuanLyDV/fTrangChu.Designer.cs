@@ -72,18 +72,19 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(1050, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 19);
+            this.label1.Size = new System.Drawing.Size(99, 27);
             this.label1.TabIndex = 10;
             this.label1.Text = "Xin chào";
             // 
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(60, 100);
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(1335, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1335, 36);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -190,7 +191,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label2.Location = new System.Drawing.Point(567, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(172, 43);
+            this.label2.Size = new System.Drawing.Size(256, 65);
             this.label2.TabIndex = 7;
             this.label2.Text = "Trang chủ";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
@@ -205,10 +206,10 @@
             // 
             this.lblPhim.AutoSize = true;
             this.lblPhim.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhim.Location = new System.Drawing.Point(496, 5);
+            this.lblPhim.Location = new System.Drawing.Point(601, 5);
             this.lblPhim.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblPhim.Name = "lblPhim";
-            this.lblPhim.Size = new System.Drawing.Size(43, 19);
+            this.lblPhim.Size = new System.Drawing.Size(68, 27);
             this.lblPhim.TabIndex = 33;
             this.lblPhim.Text = "Phim ";
             this.lblPhim.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -219,10 +220,10 @@
             // 
             this.lblVe.AutoSize = true;
             this.lblVe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVe.Location = new System.Drawing.Point(452, 6);
+            this.lblVe.Location = new System.Drawing.Point(562, 6);
             this.lblVe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblVe.Name = "lblVe";
-            this.lblVe.Size = new System.Drawing.Size(27, 19);
+            this.lblVe.Size = new System.Drawing.Size(39, 27);
             this.lblVe.TabIndex = 32;
             this.lblVe.Text = "Vé";
             this.lblVe.UseWaitCursor = true;
@@ -232,10 +233,10 @@
             // 
             this.lblTK.AutoSize = true;
             this.lblTK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTK.Location = new System.Drawing.Point(363, 6);
+            this.lblTK.Location = new System.Drawing.Point(443, 6);
             this.lblTK.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTK.Name = "lblTK";
-            this.lblTK.Size = new System.Drawing.Size(77, 19);
+            this.lblTK.Size = new System.Drawing.Size(119, 27);
             this.lblTK.TabIndex = 31;
             this.lblTK.Text = "Tài Khoản ";
             this.lblTK.UseWaitCursor = true;
@@ -245,10 +246,10 @@
             // 
             this.lblNS.AutoSize = true;
             this.lblNS.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNS.Location = new System.Drawing.Point(281, 5);
+            this.lblNS.Location = new System.Drawing.Point(342, 5);
             this.lblNS.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNS.Name = "lblNS";
-            this.lblNS.Size = new System.Drawing.Size(68, 19);
+            this.lblNS.Size = new System.Drawing.Size(101, 27);
             this.lblNS.TabIndex = 30;
             this.lblNS.Text = "Nhân Sự ";
             this.lblNS.UseWaitCursor = true;
@@ -258,10 +259,10 @@
             // 
             this.lblKH.AutoSize = true;
             this.lblKH.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKH.Location = new System.Drawing.Point(168, 5);
+            this.lblKH.Location = new System.Drawing.Point(204, 5);
             this.lblKH.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblKH.Name = "lblKH";
-            this.lblKH.Size = new System.Drawing.Size(89, 19);
+            this.lblKH.Size = new System.Drawing.Size(138, 27);
             this.lblKH.TabIndex = 29;
             this.lblKH.Text = "Khách Hàng ";
             this.lblKH.UseWaitCursor = true;
@@ -271,10 +272,10 @@
             // 
             this.lblRap.AutoSize = true;
             this.lblRap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRap.Location = new System.Drawing.Point(118, 6);
+            this.lblRap.Location = new System.Drawing.Point(147, 6);
             this.lblRap.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblRap.Name = "lblRap";
-            this.lblRap.Size = new System.Drawing.Size(38, 19);
+            this.lblRap.Size = new System.Drawing.Size(57, 27);
             this.lblRap.TabIndex = 28;
             this.lblRap.Text = "Rạp ";
             this.lblRap.UseWaitCursor = true;
@@ -287,7 +288,7 @@
             this.blTC.Location = new System.Drawing.Point(28, 6);
             this.blTC.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.blTC.Name = "blTC";
-            this.blTC.Size = new System.Drawing.Size(76, 19);
+            this.blTC.Size = new System.Drawing.Size(119, 27);
             this.blTC.TabIndex = 27;
             this.blTC.Text = "Trang Chủ ";
             this.blTC.UseWaitCursor = true;

@@ -52,6 +52,7 @@ namespace fTrangchu
             connection = new SqlConnection(str);
             connection.Open();
             loaddata();
+            PhanQuyen(LoaiTK);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -181,6 +182,50 @@ namespace fTrangchu
             this.Hide();
             form1.ShowDialog();
             this.Show();
+        }
+        public static string LoaiTK;
+        private void PhanQuyen(string LoaiTK)
+        {
+            if (LoaiTK == "QLR")
+            {
+                lblKH.Enabled = false;
+                lblNS.Enabled = false;
+                lblTK.Enabled = false;
+                lblVe.Enabled = false;
+                lblPhim.Enabled = false;
+
+            }
+            else if (LoaiTK == "QLNS")
+            {
+                lblKH.Enabled = false;
+                lblRap.Enabled = false;
+                lblTK.Enabled = false;
+                lblVe.Enabled = false;
+                lblPhim.Enabled = false;
+
+            }
+            else if (LoaiTK == "QLP")
+            {
+                lblKH.Enabled = false;
+                lblRap.Enabled = false;
+                lblTK.Enabled = false;
+                lblVe.Enabled = false;
+                lblNS.Enabled = false;
+
+            }
+            else if (LoaiTK == "QLV")
+            {
+                lblKH.Enabled = false;
+                lblRap.Enabled = false;
+                lblTK.Enabled = false;
+                lblPhim.Enabled = false;
+                lblNS.Enabled = false;
+
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void lblTK_Click(object sender, EventArgs e)
