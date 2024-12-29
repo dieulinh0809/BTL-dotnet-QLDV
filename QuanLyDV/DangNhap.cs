@@ -80,7 +80,7 @@ namespace QLR
                     if (sqlDataReader.Read())
                     {
                        string loaiTK  = sqlDataReader["LoaiTK"].ToString();
-                        QLRap form1 = new QLRap();
+                        fTrangChu form1 = new fTrangChu();
                         this.Hide();
                         form1.ShowDialog();
                         this.Show();
