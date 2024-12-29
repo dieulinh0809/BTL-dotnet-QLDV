@@ -1,4 +1,5 @@
-﻿using QuanLyDV;
+﻿using fTrangchu;
+using QuanLyDV;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -90,9 +91,10 @@ namespace QLR
                         QLR_LC.LoaiTK = loaiTK;
                         QLR_NV.LoaiTK = loaiTK;
                         QLR_PC.LoaiTK = loaiTK;
-                        this.Hide();
-                        form1.ShowDialog();
-                        this.Show();
+                        fQuanLyKhachHang.LoaiTK= loaiTK;
+                        fQuanLyPhim.LoaiTK = loaiTK;
+                        fQuanLyTaiKhoan.LoaiTK = loaiTK;
+                        fTrangChu.LoaiTK = loaiTK;
 
                     }
 
