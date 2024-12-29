@@ -45,7 +45,7 @@
             this.label1.Location = new System.Drawing.Point(94, 278);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 18);
+            this.label1.Size = new System.Drawing.Size(42, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID : ";
             // 
@@ -55,7 +55,7 @@
             this.label2.Location = new System.Drawing.Point(50, 367);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 18);
+            this.label2.Size = new System.Drawing.Size(108, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Passwords :";
             // 
@@ -74,7 +74,7 @@
             this.txtID.Location = new System.Drawing.Point(152, 275);
             this.txtID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(194, 24);
+            this.txtID.Size = new System.Drawing.Size(194, 28);
             this.txtID.TabIndex = 3;
             this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
@@ -84,7 +84,7 @@
             this.txtPass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(194, 24);
+            this.txtPass.Size = new System.Drawing.Size(194, 28);
             this.txtPass.TabIndex = 4;
             this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
@@ -110,14 +110,14 @@
             this.lblLoi.ForeColor = System.Drawing.Color.Red;
             this.lblLoi.Location = new System.Drawing.Point(148, 425);
             this.lblLoi.Name = "lblLoi";
-            this.lblLoi.Size = new System.Drawing.Size(28, 18);
+            this.lblLoi.Size = new System.Drawing.Size(34, 22);
             this.lblLoi.TabIndex = 7;
             this.lblLoi.Text = "Lỗi";
             this.lblLoi.Visible = false;
             // 
             // DangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 646);
             this.Controls.Add(this.lblLoi);
@@ -132,6 +132,7 @@
             this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
+            this.Load += new System.EventHandler(this.DangNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

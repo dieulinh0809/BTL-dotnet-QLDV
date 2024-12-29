@@ -33,3 +33,9 @@ C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\QLR.csproj.CoreCompil
 C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\QuanLyDV.exe
 C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\QuanLyDV.pdb
 C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\QuanLyDV.QLR_Ve.resources
+C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\fTrangchu.fQuanLyKhachHang.resources
+C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\fTrangchu.fQuanLyPhim.resources
+C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\fTrangchu.fTrangChu.resources
+C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\QuanLyDV.QLVe.resources
+C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\fTrangchu.UCphim2d.resources
+C:\Users\dell\Downloads\BTL-dotnet-QLDV\QuanLyDV\obj\Debug\fTrangchu.UCphim3d.resources

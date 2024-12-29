@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Xml.Serialization;
+using QuanLyDV;
 
 namespace fTrangchu
 {
@@ -159,7 +160,7 @@ namespace fTrangchu
         private void nhânSựToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            fQuanLyNhanVien fQLNV = new fQuanLyNhanVien();
+            QuanLyNS fQLNV = new QuanLyNS();
             fQLNV.ShowDialog();
             fQLNV = null;
             this.Show();

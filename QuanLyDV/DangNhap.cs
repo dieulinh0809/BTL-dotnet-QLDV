@@ -80,6 +80,9 @@ namespace QLR
                     {
                        string loaiTK  = sqlDataReader["LoaiTK"].ToString();
                         QLRap form1 = new QLRap();
+                        this.Hide();
+                        form1.ShowDialog();
+                        this.Show();
                         QuanLyCT.LoaiTK=loaiTK;
                         QuanLyNS.LoaiTK=loaiTK;
                         QLRap.LoaiTK = loaiTK;
@@ -120,6 +123,11 @@ namespace QLR
         private void txtPass_TextChanged(object sender, EventArgs e)
         {
             lblLoi.Visible = false;
+        }
+
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
