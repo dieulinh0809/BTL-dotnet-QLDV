@@ -1,103 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\",
+  "WorkspaceRootPath": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\quanlydv\\qlve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\qlve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\quanlydv\\qlve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\qlve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\quanlydv\\ftrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\ftrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\quanlydv\\ftrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|c:\\users\\dell\\downloads\\btl-dotnet-qldv\\quanlydv\\ftrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\ftrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\quanlydv\\fquanlyphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\fquanlyphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\quanlydv\\fquanlyphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\fquanlyphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|c:\\users\\dell\\downloads\\btl-dotnet-qldv\\quanlydv\\qlghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\qlghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\quanlydv\\fquanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\fquanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\quanlydv\\fquanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\fquanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\quanlydv\\quanlyns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\quanlyns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|c:\\users\\dell\\downloads\\quanlydv\\quanlydv\\quanlydv\\fquanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\fquanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|c:\\users\\dell\\downloads\\quanlydv\\quanlydv\\quanlydv\\fquanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\fquanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|c:\\users\\dell\\downloads\\quanlydv\\quanlydv\\quanlydv\\qlghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\qlghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|c:\\users\\dell\\downloads\\quanlydv\\quanlydv\\quanlydv\\qlghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\qlghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|c:\\users\\dell\\downloads\\quanlydv\\quanlydv\\quanlydv\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|c:\\users\\dell\\downloads\\quanlydv\\quanlydv\\quanlydv\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|c:\\users\\dell\\downloads\\quanlydv\\quanlydv\\quanlydv\\fquanlytaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\fquanlytaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\quanlydv\\fquanlytaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|c:\\users\\dell\\downloads\\btl-dotnet-qldv\\quanlydv\\fquanlytaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\fquanlytaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\quanlydv\\fquanlyphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\fquanlyphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\quanlydv\\fquanlyphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|c:\\users\\dell\\downloads\\btl-dotnet-qldv\\quanlydv\\fquanlyphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\fquanlyphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\quanlydv\\ftrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\ftrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|c:\\users\\dell\\downloads\\btl-dotnet-qldv\\quanlydv\\fquanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\fquanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\quanlydv\\qlr_lc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\qlr_lc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|c:\\users\\dell\\downloads\\btl-dotnet-qldv\\quanlydv\\ucphim2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\ucphim2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\quanlydv\\qlr_lc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\qlr_lc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\quanlydv\\quanlyct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\quanlyct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\quanlydv\\ftrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\ftrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
->>>>>>> 96093de181727a65f4a5fd8a232e9cc30ba3be44
+      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\quanlydv\\quanlyct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\quanlyct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\quanlydv\\qlrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\qlrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\quanlydv\\qlrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CDF0005-884B-4E2C-8137-2C7B3314D8AE}|QuanLyDV\\QLR.csproj|solutionrelative:quanlydv\\qlrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -107,29 +46,9 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "QLGhe.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QLGhe.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\QLGhe.cs",
-              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QLGhe.cs",
-              "RelativeToolTip": "QuanLyDV\\QLGhe.cs",
-              "ViewState": "AgIAAGQBAAAAAAAAAAAUwDoAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T15:43:49.37Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-=======
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
->>>>>>> 96093de181727a65f4a5fd8a232e9cc30ba3be44
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
@@ -139,274 +58,109 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 2,
-              "Title": "fTrangChu.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fTrangChu.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\fTrangChu.cs",
-              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fTrangChu.cs",
-              "RelativeToolTip": "QuanLyDV\\fTrangChu.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAqwGkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:29:44.59Z",
-=======
-              "DocumentIndex": 0,
-              "Title": "fQuanLyKhachHang.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fQuanLyKhachHang.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\fQuanLyKhachHang.cs",
-              "ToolTip": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fQuanLyKhachHang.cs*",
-              "RelativeToolTip": "QuanLyDV\\fQuanLyKhachHang.cs*",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAADQAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:38:21.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QLGhe.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\QLGhe.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\QLGhe.cs",
-              "ToolTip": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\QLGhe.cs",
-              "RelativeToolTip": "QuanLyDV\\QLGhe.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:38:07.61Z",
->>>>>>> 96093de181727a65f4a5fd8a232e9cc30ba3be44
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-<<<<<<< HEAD
-              "Title": "fTrangChu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fTrangChu.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\fTrangChu.cs",
-              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fTrangChu.cs [Design]",
-              "RelativeToolTip": "QuanLyDV\\fTrangChu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:29:40.084Z",
-=======
-              "Title": "QLGhe.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\QLGhe.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\QLGhe.cs",
-              "ToolTip": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\QLGhe.cs [Design]",
-              "RelativeToolTip": "QuanLyDV\\QLGhe.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:38:06.125Z",
->>>>>>> 96093de181727a65f4a5fd8a232e9cc30ba3be44
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-<<<<<<< HEAD
-              "Title": "fQuanLyPhim.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fQuanLyPhim.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\fQuanLyPhim.cs",
-              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fQuanLyPhim.cs",
-              "RelativeToolTip": "QuanLyDV\\fQuanLyPhim.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAAwCsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:29:25.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QLVe.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QLVe.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\QLVe.cs",
-              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QLVe.cs [Design]",
-              "RelativeToolTip": "QuanLyDV\\QLVe.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T15:57:23.629Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QLVe.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QLVe.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\QLVe.cs",
-              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QLVe.cs",
-              "RelativeToolTip": "QuanLyDV\\QLVe.cs",
-              "ViewState": "AgIAABsBAAAAAAAAAAAiwGQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T15:57:27.228Z",
-=======
-              "Title": "DangNhap.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\DangNhap.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\DangNhap.cs",
-              "ToolTip": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\DangNhap.cs*",
-              "RelativeToolTip": "QuanLyDV\\DangNhap.cs*",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAEwH4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:38:02.867Z",
->>>>>>> 96093de181727a65f4a5fd8a232e9cc30ba3be44
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-<<<<<<< HEAD
               "Title": "fQuanLyPhim.cs [Design]",
               "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fQuanLyPhim.cs",
               "RelativeDocumentMoniker": "QuanLyDV\\fQuanLyPhim.cs",
               "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fQuanLyPhim.cs [Design]",
               "RelativeToolTip": "QuanLyDV\\fQuanLyPhim.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:27:55.763Z",
-=======
-              "Title": "DangNhap.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\DangNhap.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\DangNhap.cs",
-              "ToolTip": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\DangNhap.cs [Design]*",
-              "RelativeToolTip": "QuanLyDV\\DangNhap.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:38:00.644Z",
->>>>>>> 96093de181727a65f4a5fd8a232e9cc30ba3be44
+              "WhenOpened": "2024-12-29T05:44:30.021Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 7,
-              "Title": "fQuanLyKhachHang.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fQuanLyKhachHang.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\fQuanLyKhachHang.cs",
-              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fQuanLyKhachHang.cs",
-              "RelativeToolTip": "QuanLyDV\\fQuanLyKhachHang.cs",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAQwKIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:28:04.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "fQuanLyKhachHang.cs [Design]",
               "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fQuanLyKhachHang.cs",
               "RelativeDocumentMoniker": "QuanLyDV\\fQuanLyKhachHang.cs",
               "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fQuanLyKhachHang.cs [Design]",
               "RelativeToolTip": "QuanLyDV\\fQuanLyKhachHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:27:05.324Z"
-=======
-              "DocumentIndex": 1,
-              "Title": "fQuanLyKhachHang.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fQuanLyKhachHang.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\fQuanLyKhachHang.cs",
-              "ToolTip": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fQuanLyKhachHang.cs [Design]*",
-              "RelativeToolTip": "QuanLyDV\\fQuanLyKhachHang.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:37:59.682Z",
+              "WhenOpened": "2024-12-29T05:44:19.384Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "QLR_LC.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\QLR_LC.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\QLR_LC.cs",
-              "ToolTip": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\QLR_LC.cs",
-              "RelativeToolTip": "QuanLyDV\\QLR_LC.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "fTrangChu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fTrangChu.cs",
+              "RelativeDocumentMoniker": "QuanLyDV\\fTrangChu.cs",
+              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fTrangChu.cs [Design]",
+              "RelativeToolTip": "QuanLyDV\\fTrangChu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:09:12.084Z"
+              "WhenOpened": "2024-12-29T05:44:15.605Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "QLR_LC.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\QLR_LC.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\QLR_LC.cs",
-              "ToolTip": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\QLR_LC.cs [Design]",
-              "RelativeToolTip": "QuanLyDV\\QLR_LC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:09:10.744Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "fQuanLyTaiKhoan.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fQuanLyTaiKhoan.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fQuanLyTaiKhoan.cs",
               "RelativeDocumentMoniker": "QuanLyDV\\fQuanLyTaiKhoan.cs",
-              "ToolTip": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fQuanLyTaiKhoan.cs [Design]",
+              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\fQuanLyTaiKhoan.cs [Design]",
               "RelativeToolTip": "QuanLyDV\\fQuanLyTaiKhoan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:08:11.668Z",
+              "WhenOpened": "2024-12-29T05:44:07.358Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UCphim2d.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\UCphim2d.cs",
+              "RelativeDocumentMoniker": "QuanLyDV\\UCphim2d.cs",
+              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\UCphim2d.cs [Design]",
+              "RelativeToolTip": "QuanLyDV\\UCphim2d.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T05:33:28.864Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QuanLyCT.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QuanLyCT.cs",
+              "RelativeDocumentMoniker": "QuanLyDV\\QuanLyCT.cs",
+              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QuanLyCT.cs",
+              "RelativeToolTip": "QuanLyDV\\QuanLyCT.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAswMQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-12-29T05:33:24.112Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "fQuanLyTaiKhoan.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fQuanLyTaiKhoan.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\fQuanLyTaiKhoan.cs",
-              "ToolTip": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fQuanLyTaiKhoan.cs",
-              "RelativeToolTip": "QuanLyDV\\fQuanLyTaiKhoan.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAuwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:08:04.404Z",
-              "EditorCaption": ""
+              "Title": "QuanLyCT.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QuanLyCT.cs",
+              "RelativeDocumentMoniker": "QuanLyDV\\QuanLyCT.cs",
+              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QuanLyCT.cs [Design]",
+              "RelativeToolTip": "QuanLyDV\\QuanLyCT.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-12-29T05:33:22.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "fTrangChu.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fTrangChu.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\fTrangChu.cs",
-              "ToolTip": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fTrangChu.cs",
-              "RelativeToolTip": "QuanLyDV\\fTrangChu.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAQwHkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:06:11.702Z"
->>>>>>> 96093de181727a65f4a5fd8a232e9cc30ba3be44
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-<<<<<<< HEAD
-              "Title": "QuanLyNS.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QuanLyNS.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\QuanLyNS.cs",
-              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QuanLyNS.cs",
-              "RelativeToolTip": "QuanLyDV\\QuanLyNS.cs",
-              "ViewState": "AgIAAA4CAAAAAAAAAAAmwOwBAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T15:52:47.725Z"
-=======
-              "Title": "fQuanLyPhim.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fQuanLyPhim.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\fQuanLyPhim.cs",
-              "ToolTip": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fQuanLyPhim.cs [Design]",
-              "RelativeToolTip": "QuanLyDV\\fQuanLyPhim.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:05:02.254Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "fTrangChu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fTrangChu.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\fTrangChu.cs",
-              "ToolTip": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fTrangChu.cs [Design]",
-              "RelativeToolTip": "QuanLyDV\\fTrangChu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:04:26.153Z"
+              "DocumentIndex": 7,
+              "Title": "QLRap.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QLRap.cs",
+              "RelativeDocumentMoniker": "QuanLyDV\\QLRap.cs",
+              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QLRap.cs",
+              "RelativeToolTip": "QuanLyDV\\QLRap.cs",
+              "ViewState": "AgIAAH0BAAAAAAAAAAAswI4BAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-12-29T05:33:16.711Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "fQuanLyPhim.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fQuanLyPhim.cs",
-              "RelativeDocumentMoniker": "QuanLyDV\\fQuanLyPhim.cs",
-              "ToolTip": "C:\\Users\\Dell\\Downloads\\QuanLyDV\\QuanLyDV\\QuanLyDV\\fQuanLyPhim.cs",
-              "RelativeToolTip": "QuanLyDV\\fQuanLyPhim.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T16:04:06.636Z"
->>>>>>> 96093de181727a65f4a5fd8a232e9cc30ba3be44
+              "Title": "QLRap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QLRap.cs",
+              "RelativeDocumentMoniker": "QuanLyDV\\QLRap.cs",
+              "ToolTip": "C:\\Users\\dell\\Downloads\\BTL-dotnet-QLDV\\QuanLyDV\\QLRap.cs [Design]",
+              "RelativeToolTip": "QuanLyDV\\QLRap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-12-29T05:33:15.463Z"
             }
           ]
         }
