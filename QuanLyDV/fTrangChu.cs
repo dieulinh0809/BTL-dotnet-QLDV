@@ -138,7 +138,10 @@ namespace fTrangchu
 
         private void lblPhim_Click(object sender, EventArgs e)
         {
-
+            fQuanLyPhim form1 = new fQuanLyPhim();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
         }
 
         private void lblRap_Click(object sender, EventArgs e)
@@ -148,7 +151,10 @@ namespace fTrangchu
 
         private void blTC_Click(object sender, EventArgs e)
         {
-
+            fTrangChu form1 = new fTrangChu();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
         }
     }
 }

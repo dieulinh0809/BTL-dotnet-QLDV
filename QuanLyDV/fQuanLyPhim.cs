@@ -173,7 +173,10 @@ namespace fTrangchu
 
         private void lblPhim_Click(object sender, EventArgs e)
         {
-
+            fQuanLyPhim form1 = new fQuanLyPhim();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
         }
     }
 }
