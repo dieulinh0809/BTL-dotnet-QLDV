@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Xml.Serialization;
+using QLR;
 using QuanLyDV;
 
 namespace fTrangchu
@@ -142,27 +143,67 @@ namespace fTrangchu
             }
         }
 
-        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
+         
 
+        private void blTC_Click(object sender, EventArgs e)
+        {
+            fTrangChu form1 = new fTrangChu();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
         }
 
-        private void nhânSựToolStripMenuItem_Click(object sender, EventArgs e)
+        private void lblRap_Click(object sender, EventArgs e)
         {
+            QLRap form1 = new QLRap();
             this.Hide();
-            QuanLyNS fQLNV = new QuanLyNS();
-            fQLNV.ShowDialog();
-            fQLNV = null;
+            form1.ShowDialog();
+            this.Show();
+        }
+
+        private void lblKH_Click(object sender, EventArgs e)
+        {
+            fQuanLyKhachHang form1 = new fQuanLyKhachHang();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
+        }
+
+        private void lblNS_Click(object sender, EventArgs e)
+        {
+            QuanLyNS form1 = new QuanLyNS();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
+        }
+
+        private void lblTK_Click(object sender, EventArgs e)
+        {
+            fQuanLyTaiKhoan  form1 = new fQuanLyTaiKhoan();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
+        }
+
+        private void lblVe_Click(object sender, EventArgs e)
+        {
+            QLVe form1 = new QLVe();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
+        }
+
+        private void lblPhim_Click(object sender, EventArgs e)
+        {
+            fQuanLyPhim form1 = new fQuanLyPhim();
+            this.Hide();
+            form1.ShowDialog();
             this.Show();
         }
     }

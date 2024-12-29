@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLR;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -120,12 +121,18 @@ namespace fTrangchu
 
         private void lblPhim_Click(object sender, EventArgs e)
         {
-
+            fQuanLyPhim form1 = new fQuanLyPhim();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
         }
 
         private void lblRap_Click(object sender, EventArgs e)
         {
-
+            QLRap form1 = new QLRap();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
         }
 
         private void blTC_Click(object sender, EventArgs e)
