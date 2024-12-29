@@ -19,6 +19,7 @@ namespace QuanLyDV
         {
             InitializeComponent();
         }
+        public static string LoaiTK;
         private void PhanQuyen(string LoaiTK)
         {
             if (LoaiTK == "QLR")
@@ -330,7 +331,10 @@ namespace QuanLyDV
 
         private void lblTK_Click(object sender, EventArgs e)
         {
-
+            fQuanLyTaiKhoan form1 = new fQuanLyTaiKhoan();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
         }
 
         private void lblPhim_Click(object sender, EventArgs e)

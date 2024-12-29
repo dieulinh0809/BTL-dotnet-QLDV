@@ -393,7 +393,10 @@ namespace QLR
 
         private void lblTK_Click(object sender, EventArgs e)
         {
-
+            fQuanLyTaiKhoan form1 = new fQuanLyTaiKhoan();
+            this.Hide();
+            form1.ShowDialog();
+            this.Show();
         }
 
         private void lblVe_Click(object sender, EventArgs e)
